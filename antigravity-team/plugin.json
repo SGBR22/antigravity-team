@@ -1,0 +1,41 @@
+{
+  "name": "antigravity-team",
+  "displayName": "Antigravity Multi-Agent Ecosystem",
+  "version": "2.5.0",
+  "description": "High-velocity multi-agent engineering squad: 10 specialized agents and 14 skills based on Karpathy Autoresearch, ECC modular architecture, and NousResearch Hermes reasoning scratchpads. Includes Auto-Dispatch, Senior Dev, Code Reviewer, Researcher, System Architect, Science Compute, CAD Specialist, Typst Reporter, Visual Designer, and Coordinator.",
+  "suggestedPrompts": [
+    "researcher, исследуй библиотеку и проведи бенчмарк через автономный скрипт",
+    "system-architect, спроектируй модульную архитектуру и интерфейсы системы",
+    "senior-dev, напиши практичный скрипт с тестами по TDD без лишних типов",
+    "code-reviewer, проведи аудит логики и проверки ресурсов в коде",
+    "science-compute, автоматизируй расчет поля и нагрева ввода в COMSOL через MPh",
+    "Координатор, декомпозируй инженерную задачу, составь план и запусти агентов",
+    "Подготовь научный отчет по ГОСТ 7.32 с векторной схемой CeTZ с помощью typst-reporter",
+    "cad-specialist, напиши скрипт автоматизации для Компас-3D и проверь деталь для 3D-печати"
+  ],
+  "keywords": [
+    "multi-agent",
+    "auto-dispatch",
+    "autoresearch",
+    "karpathy-skills",
+    "everything-claude-code",
+    "hermes-agent",
+    "system-architect",
+    "researcher",
+    "coordinator",
+    "senior-dev",
+    "code-reviewer",
+    "comsol",
+    "mph",
+    "tdd",
+    "clean-code",
+    "science",
+    "cad",
+    "kompas-3d",
+    "blender",
+    "typst",
+    "modern-g7-32",
+    "token-economy",
+    "think-in-code"
+  ]
+}
