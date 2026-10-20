@@ -12,7 +12,7 @@
 
 *Глобальный инженерный плагин для Google Antigravity: проектирование в САПР (КОМПАС-3D, Blender), физико-математическое моделирование (COMSOL Multiphysics MPh, FEMM, GUM), разработка по стандартам TDD, автономные эмпирические исследования (Karpathy Autoresearch), системная модульная архитектура (ECC) и публикационные отчеты по ГОСТ 7.32.*
 
-[Быстрый старт](#-быстрый-старт-за-3-шага) • [Авто-выбор агентов](#-автоматический-выбор-агентов-auto-dispatch) • [Команда субагентов](#-команда-субагентов-10-ролей) • [Матрица скилов](#-матрица-14-прогрессивных-скилов) • [Токен-экономика](#-токен-экономика-think-in-code) • [Подключение GitHub](#-подключение-к-github)
+[Быстрый старт](#-быстрый-старт-за-3-шага) • [Авто-выбор агентов](#-автоматический-выбор-агентов-auto-dispatch) • [Команда субагентов](#-команда-субагентов-10-ролей) • [Матрица скилов](#-матрица-14-прогрессивных-скилов) • [Токен-экономика](#-токен-экономика-think-in-code)
 
 </div>
 
@@ -103,19 +103,3 @@ flowchart TD
 12. `blender-bpy-modeling` — Headless Python-скриптинг Blender (`bpy`).
 13. `three-d-printing-preflight` — Инженерный контроль 3D-печати (допуски, усадка).
 14. `typst-report` — Компиляция отчетов по ГОСТ 7.32 с векторной графикой CeTZ.
-
----
-
-## 🔗 Подключение к GitHub
-
-```powershell
-# Вариант А: через GitHub CLI
-gh repo create antigravity-team --public --source=. --remote=origin --push
-
-# Вариант Б: через git remote
-git add .
-git commit -m "feat: release antigravity-team v2.5 with 10 agents, 14 skills, and auto-dispatch"
-git remote add origin https://github.com/<ваш-логин>/antigravity-team.git
-git branch -M main
-git push -u origin main
-```
