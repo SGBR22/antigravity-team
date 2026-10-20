@@ -20,10 +20,9 @@
 
 ## 🚀 Быстрый старт за 1 клик
 
-### Вариант 1: Установка через PowerShell (из склонированного репозитория)
 1. Склонируйте репозиторий:
    ```bash
-   git clone https://github.com/your-username/antigravity-team.git
+   git clone https://github.com/SGBR22/antigravity-team.git
    cd antigravity-team
    ```
 2. Запустите скрипт установки:
@@ -31,11 +30,6 @@
    powershell -ExecutionPolicy Bypass -File .\install-team.ps1
    ```
    *(Или нажмите правой кнопкой мыши на `install-team.ps1` $\to$ **«Выполнить с помощью PowerShell»**)*.
-
-### Вариант 2: Передача архивом без Git
-Если вы скачали или получили файл `antigravity-team-portable.zip`:
-1. Распакуйте архив в любую папку.
-2. Запустите `install-team.ps1`.
 3. Скрипт автоматически скопирует плагин в `~/.gemini/config/plugins/antigravity-team`, активирует его в `config.json` и предложит установить инженерные Python-пакеты.
 4. Перезапустите Google Antigravity.
 
@@ -127,9 +121,6 @@ antigravity-team/
 │   └── plugin.json               # Манифест плагина
 ├── AGENTS.md                     # Правила автоматической маршрутизации для воркспейса
 ├── install-team.ps1              # Автоматический инсталлятор плагина в систему
-├── export-team.ps1               # Скрипт сборки автономного ZIP-архива
-├── antigravity-team-portable.zip # Портативный архив для передачи
 ├── ANTIGRAVITY_TEAM_SETUP_GUIDE.md # Подробный мануал по настройке
-├── КАК_ПЕРЕДАТЬ_ДРУГУ.md         # Инструкция для отправки коллегам
 └── README.md                     # Главная документация
 ```

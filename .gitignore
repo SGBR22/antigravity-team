@@ -3,6 +3,9 @@
 scratch/
 brain/
 *.log
+*.zip
+export-team.ps1
+КАК_ПЕРЕДАТЬ_ДРУГУ.md
 
 # Python
 __pycache__/
