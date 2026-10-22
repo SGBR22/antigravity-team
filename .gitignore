@@ -35,8 +35,25 @@ wheels/
 # Testing & Type checking
 .pytest_cache/
 .mypy_cache/
+.ruff_cache/
 .coverage
 htmlcov/
+
+# Security & Credentials
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.pfx
+*.p12
+*.crt
+id_rsa*
+id_ed25519*
+*secret*
+*credentials*
+token.json
+auth.json
 
 # Editor directories
 .vscode/
