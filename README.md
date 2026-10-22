@@ -1,22 +1,38 @@
 # ⚡ Antigravity Multi-Agent Ecosystem (v2.5)
-### High-Velocity Engineering Squad & "Think in Code" Token Economy for Google Antigravity
+### High-Velocity Engineering Squad, Speculative Skeleton Pipelining & "Think in Code" Token Economy for Google Antigravity
 
 <div align="center">
+
+[![Live Kokonut UI Showcase](https://img.shields.io/badge/✨_Live_Showcase-Kokonut_UI_%2B_Anime.js-8A2BE2?style=for-the-badge&logo=html5)](showcase.html)
 
 [![English](https://img.shields.io/badge/Language-English-blue?style=flat-square)](README.md)
 [![Русский](https://img.shields.io/badge/Язык-Русский-red?style=flat-square)](README_RU.md)
 [![Antigravity](https://img.shields.io/badge/Platform-Google_Antigravity_2.5-4285F4?style=flat-square&logo=google&logoColor=white)](https://antigravity.google)
 [![Architecture](https://img.shields.io/badge/Architecture-10_Agents_%7C_14_Skills-8A2BE2?style=flat-square)](https://github.com/SGBR22/antigravity-team)
 [![Paradigms](https://img.shields.io/badge/Paradigms-Karpathy_•_ECC_•_Hermes-FF007F?style=flat-square)](https://github.com/SGBR22/antigravity-team)
-[![Dev Loop](https://img.shields.io/badge/Dev_Loop-Pragmatic_TDD_%2B_QA-00C853?style=flat-square)](https://github.com/SGBR22/antigravity-team)
-[![Token Efficiency](https://img.shields.io/badge/Token_Budget-Think_in_Code_(-98%25)-FF6D00?style=flat-square)](https://github.com/SGBR22/antigravity-team)
+[![Dev Loop](https://img.shields.io/badge/Dev_Loop-Multi--Dev_Consensus_%2B_QA-00C853?style=flat-square)](https://github.com/SGBR22/antigravity-team)
+[![Token Efficiency](https://img.shields.io/badge/Token_Shield-Think_in_Code_(-98%25)-FF6D00?style=flat-square)](https://github.com/SGBR22/antigravity-team)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
-*An industrial-grade multi-agent engineering squad for Google Antigravity: CAD automation (Kompas-3D, Blender bpy), physical & mathematical modeling (COMSOL Multiphysics MPh, FEMM, GUM metrology), clean test-driven development, empirical autoresearch (Karpathy loop), modular system architecture (ECC), and publication-ready Typst reports.*
+*An industrial-grade multi-agent engineering squad for Google Antigravity: CAD automation (Kompas-3D, Blender bpy), physical & mathematical modeling (COMSOL Multiphysics MPh, FEMM, GUM metrology), clean backend TDD, empirical autoresearch (Karpathy loop), modular system architecture (ECC), and publication-ready Typst reports.*
 
-**English** • **[Русский](README_RU.md)**
+**English** • **[Русский](README_RU.md)** • **[Live Interactive Showcase (showcase.html)](showcase.html)**
 
-[Quick Start](#-quick-start) • [Auto-Dispatch Matrix](#-mandatory-auto-dispatch) • [Subagent Squad](#-specialized-subagents-10-roles) • [Skill Matrix](#-skill-matrix-14-progressive-skills) • [Repository Structure](#-repository-structure) • [Setup Guide](SETUP_GUIDE.md)
+[Quick Start](#-quick-start) • [Auto-Dispatch Matrix](#-mandatory-auto-dispatch) • [Speculative Skeleton Pipelining](#-speculative-skeleton-pipelining) • [Subagent Squad](#-specialized-subagents-10-roles) • [Active Token Shield](#-active-token-shield) • [Repository Structure](#-repository-structure)
+
+</div>
+
+---
+
+## 🎨 Interactive Kokonut UI & Anime.js Showcase
+
+An interactive, responsive dashboard styled with **Kokonut UI** dark-mode aesthetics and **Anime.js** physics animations is included directly in the repository:
+
+👉 **[Launch Interactive Showcase (showcase.html)](showcase.html)**
+
+<div align="center">
+
+![Speculative Skeleton Pipelining](assets/pipeline-anim.svg)
 
 </div>
 
@@ -41,76 +57,62 @@
 
 ## 🚨 Mandatory Auto-Dispatch
 
-Never manually invoke agents or do heavy lifting in the monolithic root prompt. Antigravity dynamically detects domain requirements and automatically invokes the relevant subagent via `invoke_subagent`:
+Antigravity automatically routes each incoming task domain according to strict role isolation rules:
 
-| Domain / Keywords | Auto-Dispatched Subagent | Execution Role |
+| Domain / Task | Auto-Dispatched Subagent | Strict Boundaries & Mandate |
 | :--- | :--- | :--- |
-| **Code, refactoring, bug fixes, TDD, scripts** | ⚡ `senior-dev` | Clean, pragmatic, typed code with automated tests. |
-| **Code review, security audit, COM leak checks** | 🛡️ `code-reviewer` | Adversarial 6-point QA audit and defect tickets. |
-| **Autonomous research, benchmarks, exploration** | 🔬 `researcher` | Karpathy & Hermes loop: hypothesis $\to$ script $\to$ facts. |
-| **System architecture, modularity, prompt design** | 🏛️ `system-architect` | ECC modular system design and lightweight ADRs. |
-| **COMSOL, MPh, HV bushings, FEMM, metrology** | 🧮 `science-compute` | Multiphysics modeling, electrophysics, GUM error budgets. |
-| **Kompas-3D, Blender bpy, 3D printing (FDM/SLA)** | 📐 `cad-specialist` | CAD pywin32 API 5/7 automation, tolerances, mesh checks. |
-| **GOST 7.32 reports, Typst documents, CeTZ** | 📄 `typst-reporter` | Publication-ready engineering & research reports. |
-| **Mermaid diagrams, Generative UI, dashboards** | 🎨 `visual-designer` | Interactive web panels, system diagrams, charts. |
+| **Planning, DAG decomposition, contracts, ADR** | 🏛️ `system-architect` | **Master Planner**: designs dependency DAGs, interface contracts, and Definition of Done (DoD). |
+| **Dispatching, concurrent lanes, pipelines** | 🎯 `coordinator` | **Execution Dispatcher**: launches parallel lanes and synchronizes contracts. *Forbidden from writing code or reports!* |
+| **Backend code, algorithms, scripts, CLI, TDD** | ⚡ `senior-dev` | High-velocity systems engineer. *Strictly backend/logic — forbidden from writing UI/HTML/CSS!* |
+| **Frontend, UI, HTML/CSS, Tailwind, dashboards** | 🎨 `visual-designer` | **Exclusive UI Authority**: builds web interfaces, interactive panels, Mermaid diagrams, and charts. |
+| **Code audit, security, diff review, plan QA** | 🛡️ `code-reviewer` | **Plan Verifier & QA Auditor**: validates plan completion (DoD), edge cases, and resource leaks. |
+| **Reports, notes, GOST 7.32, tech memos, PDF** | 📄 `typst-reporter` | **Exclusive Report Authority**: typesets all publication-grade documents via Typst using external `results.json`. |
+| **COMSOL, MPh, HV bushings, FEMM, metrology** | 🧮 `science-compute` | Electrophysics & numerical modeling; exports matrices and metrics to `results.json`. |
+| **Kompas-3D, Blender bpy, 3D printing (FDM/SLA)** | 📐 `cad-specialist` | CAD automation via pywin32 API 5/7, procedural 3D modeling, and slicing checks. |
+| **Autonomous research, benchmarks, exploration** | 🔬 `researcher` | Karpathy & Hermes loop: hypothesis $\to$ probe script $\to$ factual findings. |
 | **Web navigation, GOST/IEC standards, official APIs** | 🌐 `web-surfer` | Precision data synthesis without conversational fluff. |
-| **Cross-domain, multi-step enterprise projects** | 🎯 `coordinator` | Work breakdown structures, roadmaps, task orchestration. |
 
 ---
 
-## 🧭 System Topology
+## ⚡ Speculative Skeleton Pipelining
+
+Eliminates sequential idle time: when a job involves both computation and documentation/UI, agents launch **concurrently**:
 
 ```mermaid
-flowchart TD
-    User(["👤 User / Lead Engineer"]) -->|"Task Request"| Router{"⚡ Auto-Dispatch Router"}
+flowchart LR
+    subgraph FanOut ["Concurrent Fan-Out"]
+        direction TB
+        LaneA["Lane 1: science-compute / senior-dev<br/>Physics Simulation / Backend Logic"]
+        LaneB["Lane 2: typst-reporter / visual-designer<br/>Speculative Document Skeleton / UI Scaffolding"]
+    end
 
-    Router -->|"Code / Bugfix"| SeniorDev["⚡ senior-dev<br/>TDD • Clean Code"]
-    Router -->|"QA / Security"| Reviewer["🛡️ code-reviewer<br/>6-Point QA • Leak Audit"]
-    Router -->|"Research / Probe"| Researcher["🔬 researcher<br/>Karpathy Loop • Probes"]
-    Router -->|"Architecture / Prompts"| Architect["🏛️ system-architect<br/>ECC Modularity • ADR"]
-    Router -->|"COMSOL / FEMM / Math"| Sci["🧮 science-compute<br/>MPh • GOST 10693 • GUM"]
-    Router -->|"Kompas-3D / 3D Print"| CAD["📐 cad-specialist<br/>API 5/7 • Blender bpy"]
-    Router -->|"Formal Reports / Docs"| Typst["📄 typst-reporter<br/>modern-g7-32 • CeTZ"]
-    Router -->|"Diagrams / Dashboards"| Visual["🎨 visual-designer<br/>Mermaid • Generative UI"]
-    Router -->|"Standards / Web Search"| Surfer["🌐 web-surfer<br/>GOST / IEC • Live Docs"]
-    Router -->|"Complex Initiative"| Coord["🎯 coordinator<br/>Plan • Orchestration"]
-
-    SeniorDev <-->|"Adversarial Dev Loop"| Reviewer
+    Contract["Coordinator: Declare File Contract<br/>artifacts/calc_results.json"] --> FanOut
+    LaneA -->|"Write structured data"| Join{"Zero-Lag Join"}
+    LaneB -->|"Draft styles & data bindings"| Join
+    Join -->|"Instant compile (0.2s)"| Done["Published PDF / Interactive UI"]
+    Done --> QA["Plan Verifier (code-reviewer)"]
 ```
 
 ---
 
-## 👥 Specialized Subagents (10 Roles)
+## 👥 Multi-Dev Consensus Loop (Collaborative Coding)
 
-1. 🎯 **`coordinator`** — Central orchestrator. Decomposes tasks, designs dependency graphs, and synthesizes team deliverables.
-2. ⚡ **`senior-dev`** — Senior developer. Writes robust, clean code via pragmatic TDD without type-hint bureaucracy.
-3. 🛡️ **`code-reviewer`** — Adversarial QA auditor. Enforces a 6-point checklist targeting COM leaks, boundary values, and logic errors.
-4. 🔬 **`researcher`** — Autonomous researcher inspired by Andrej Karpathy and NousResearch Hermes. Runs headless probe scripts for rapid empirical synthesis.
-5. 🏛️ **`system-architect`** — System and prompt architect based on ECC (Everything Claude Code) patterns. Ensures modular boundaries and ADR tracking.
-6. 🧮 **`science-compute`** — Physics and mathematics specialist. Automates COMSOL via MPh, simulates electrostatic fields in FEMM, and propagates errors per GUM / GOST 8.207.
-7. 📐 **`cad-specialist`** — CAD & manufacturing engineer. Controls Kompas-3D (pywin32 API 5/7, GOST 2.104 title blocks), scripts Blender bpy, and validates 3D print tolerances.
-8. 📄 **`typst-reporter`** — Scientific documentation specialist. Compiles PDF reports using Typst (`@preview/modern-g7-32:0.2.0`) and CeTZ vector diagrams.
-9. 🎨 **`visual-designer`** — Visual and UI designer. Builds reactive Generative UI HTML dashboards and architectural Mermaid diagrams.
-10. 🌐 **`web-surfer`** — Deep web investigator. Gathers current standards, API schemas, and technical documentation with clean citations.
+1. **Solution Discussion**: `senior-dev` formulates the architecture (types, boundary conditions) before large changes.
+2. **Peer Review**: `code-reviewer` validates against regressions, COM/process leaks, and prepares test cases.
+3. **TDD Loop**: Failing test (RED) $\to$ minimal clean code (GREEN) $\to$ headless `pytest -q`.
+4. **Acceptance**: `code-reviewer` verifies code against the Definition of Done.
 
 ---
 
-## 🛠️ Skill Matrix (14 Progressive Skills)
+## 🛡️ Active Token Shield
 
-1. `autoresearch` — Karpathy empirical research loop (Hypothesis $\to$ Headless probe $\to$ Metrics $\to$ Synthesis).
-2. `system-architecture` — Modular boundaries, interface contracts, and ECC Architectural Decision Records (ADR).
-3. `token-budget-optimizer` — Dynamic context management and reasoning budget control ("Think in Code").
-4. `test-driven-development` — Pragmatic TDD workflow across Python, TypeScript, Rust, and C++.
-5. `systematic-debugging` — Scientific root-cause debugging with the "Halt-at-2" anti-loop circuit breaker.
-6. `code-refactoring-and-architecture` — Clean code practices and elimination of dead code.
-7. `git-workflow-and-commits` — Conventional Commits 1.0 and atomic branch hygiene.
-8. `hv-bushing-calc` — Electrophysical calculations for high-voltage bushings in COMSOL and FEMM.
-9. `metrology-lab-data` — Experimental measurement processing (Student's t-distribution, least-squares fit).
-10. `uncertainty-and-units` — Physical dimensional analysis and GUM measurement uncertainty propagation (`pint`, `uncertainties`).
-11. `kompas-3d-automation` — Kompas-3D CAD automation via Python pywin32 API 5/7.
-12. `blender-bpy-modeling` — Headless procedural 3D modeling and STL/GLTF exports in Blender (`bpy`).
-13. `three-d-printing-preflight` — Slicer and mechanical preflight engineering (PLA, PETG, ABS, PA-CF tolerances).
-14. `typst-report` — GOST 7.32 report compilation with CeTZ vector graphics.
+1. **Direct-Answer Principle**: No polite preambles. Immediate deliverables, diffs, or commands.
+2. **"Think in Code" Paradigm (Karpathy Standard)**:
+   - Never ingest giant raw logs or CSVs into prompt context.
+   - Run a 5-10 line headless probe script or PowerShell filter, emitting $< 15$ lines of summary.
+3. **Differential Referencing**: Send clickable line pointers `[file.py](file:///path/to/file.py#L40-L65)` instead of pasting whole files.
+4. **Dense TOON Notation**: Uses YAML/TOON for inter-agent messages, cutting 40–60% token overhead.
+5. **Anti-Loop Circuit Breaker**: Halt immediately after 2 consecutive failures and switch hypotheses.
 
 ---
 
@@ -118,15 +120,18 @@ flowchart TD
 
 ```
 antigravity-team/
-├── antigravity-team/              # Core plugin bundle (copied to ~/.gemini/config/plugins/)
-│   ├── agents/                   # 10 specialized subagent definitions (.md)
-│   ├── skills/                   # 14 progressive skill directories (SKILL.md)
-│   ├── rules/                    # Auto-Dispatch & Token Economy rules (AGENTS.md)
+├── antigravity-team/              # Plugin core (installed to ~/.gemini/config/plugins/)
+│   ├── agents/                   # 10 specialized subagents (.md)
+│   ├── skills/                   # 14 skill directories (SKILL.md)
+│   ├── rules/                    # Auto-Dispatch & Token rules (AGENTS.md)
 │   └── plugin.json               # Plugin manifest
+├── assets/                       # Graphics & animated SVG (pipeline-anim.svg)
+├── showcase.html                 # Interactive Web Showcase (Kokonut UI + Anime.js)
 ├── AGENTS.md                     # Workspace auto-dispatch rules
-├── install-team.ps1              # 1-Click PowerShell installer
+├── install-team.ps1              # Automated installer
+├── export-team.ps1               # Portable bundle packager
 ├── README.md                     # English documentation
 ├── README_RU.md                  # Russian documentation
-├── SETUP_GUIDE.md                # Detailed configuration manual (English)
-└── SETUP_GUIDE_RU.md             # Detailed configuration manual (Russian)
+├── SETUP_GUIDE.md                # English setup guide
+└── SETUP_GUIDE_RU.md             # Russian setup guide
 ```

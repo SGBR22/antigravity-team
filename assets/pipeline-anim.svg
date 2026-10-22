@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="100%" height="280">
+  <defs>
+    <!-- Dark Kokonut UI Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06080d"/>
+      <stop offset="50%" stop-color="#0c1017"/>
+      <stop offset="100%" stop-color="#080c14"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151d2d" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0e1420" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <linearGradient id="indigoGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <linearGradient id="emeraldGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <linearGradient id="pinkGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+
+    <!-- Filter Glows -->
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes dashflow {
+        0% { stroke-dashoffset: 40; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes pulseNode {
+        0%, 100% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 6px #10b981); }
+      }
+      @keyframes cardBorderGlow {
+        0%, 100% { stroke: rgba(99, 102, 241, 0.25); }
+        50% { stroke: rgba(16, 185, 129, 0.5); }
+      }
+      .anim-dash {
+        stroke-dasharray: 6, 6;
+        animation: dashflow 1.5s linear infinite;
+      }
+      .pulse-circle {
+        transform-origin: center;
+        animation: pulseNode 2s infinite ease-in-out;
+      }
+      .card-border {
+        animation: cardBorderGlow 4s infinite ease-in-out;
+      }
+      .font-main {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+      }
+      .font-code {
+        font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="960" height="280" rx="16" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Radial Background Accents -->
+  <circle cx="150" cy="80" r="120" fill="#6366f1" opacity="0.06" filter="blur(30px)"/>
+  <circle cx="500" cy="140" r="140" fill="#10b981" opacity="0.05" filter="blur(35px)"/>
+  <circle cx="820" cy="200" r="130" fill="#ec4899" opacity="0.05" filter="blur(30px)"/>
+
+  <!-- Flowing Connection Lines -->
+  <!-- Coordinator -> Lane A (Compute) -->
+  <path d="M 270 110 C 340 110, 360 85, 410 85" fill="none" stroke="#6366f1" stroke-width="2" class="anim-dash" opacity="0.8"/>
+  <!-- Coordinator -> Lane B (Typst Skeleton) -->
+  <path d="M 270 170 C 340 170, 360 195, 410 195" fill="none" stroke="#10b981" stroke-width="2" class="anim-dash" opacity="0.8"/>
+
+  <!-- Lane A -> Join -->
+  <path d="M 640 85 C 690 85, 710 120, 750 130" fill="none" stroke="#ec4899" stroke-width="2" class="anim-dash" opacity="0.8"/>
+  <!-- Lane B -> Join -->
+  <path d="M 640 195 C 690 195, 710 160, 750 150" fill="none" stroke="#10b981" stroke-width="2" class="anim-dash" opacity="0.8"/>
+
+  <!-- CARD 1: Coordinator (Triage & Contract) -->
+  <g transform="translate(40, 65)">
+    <rect width="230" height="150" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2" class="card-border"/>
+    <circle cx="32" cy="35" r="14" fill="#6366f1" opacity="0.15"/>
+    <text x="32" y="40" text-anchor="middle" fill="#818cf8" font-size="14" font-weight="bold">🎯</text>
+    <text x="56" y="32" fill="#f8fafc" font-size="13" font-weight="700" class="font-main">coordinator</text>
+    <text x="56" y="47" fill="#94a3b8" font-size="10" class="font-main">Диспетчер-оркестратор</text>
+    
+    <rect x="16" y="66" width="198" height="66" rx="8" fill="#090d16" stroke="#1e293b" stroke-width="1"/>
+    <text x="26" y="85" fill="#a5b4fc" font-size="9.5" class="font-code font-bold">1. Triage: DAG &amp; Plan</text>
+    <text x="26" y="103" fill="#cbd5e1" font-size="9" class="font-code">contract: results.json</text>
+    <text x="26" y="120" fill="#34d399" font-size="9" class="font-code">fan-out: [Lane1, Lane2]</text>
+  </g>
+
+  <!-- CARD 2A: Lane A - science-compute -->
+  <g transform="translate(410, 30)">
+    <rect width="230" height="100" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2"/>
+    <circle cx="30" cy="28" r="12" fill="#ec4899" opacity="0.15"/>
+    <text x="30" y="33" text-anchor="middle" fill="#f472b6" font-size="12">🧮</text>
+    <text x="50" y="27" fill="#f8fafc" font-size="12" font-weight="700" class="font-main">science-compute</text>
+    <text x="50" y="40" fill="#94a3b8" font-size="9.5" class="font-main">Lane A: Расчет поля в FEMM</text>
+
+    <rect x="14" y="52" width="202" height="36" rx="6" fill="#090d16" stroke="#1e293b"/>
+    <text x="22" y="68" fill="#f472b6" font-size="9" class="font-code">write_to_file("results.json")</text>
+    <circle cx="196" cy="70" r="4" fill="#10b981" class="pulse-circle"/>
+  </g>
+
+  <!-- CARD 2B: Lane B - typst-reporter (Skeleton) -->
+  <g transform="translate(410, 150)">
+    <rect width="230" height="100" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2"/>
+    <circle cx="30" cy="28" r="12" fill="#10b981" opacity="0.15"/>
+    <text x="30" y="33" text-anchor="middle" fill="#34d399" font-size="12">📄</text>
+    <text x="50" y="27" fill="#f8fafc" font-size="12" font-weight="700" class="font-main">typst-reporter</text>
+    <text x="50" y="40" fill="#94a3b8" font-size="9.5" class="font-main">Lane B: Спекулятивный скелет</text>
+
+    <rect x="14" y="52" width="202" height="36" rx="6" fill="#090d16" stroke="#1e293b"/>
+    <text x="22" y="68" fill="#34d399" font-size="9" class="font-code">#let data = json("results.json")</text>
+    <circle cx="196" cy="70" r="4" fill="#10b981" class="pulse-circle"/>
+  </g>
+
+  <!-- CARD 3: Zero-Lag Join & Verification -->
+  <g transform="translate(730, 65)">
+    <rect width="190" height="150" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2" class="card-border"/>
+    <circle cx="28" cy="35" r="14" fill="#10b981" opacity="0.15"/>
+    <text x="28" y="40" text-anchor="middle" fill="#34d399" font-size="14">⚡</text>
+    <text x="50" y="32" fill="#f8fafc" font-size="12.5" font-weight="700" class="font-main">Zero-Lag Join</text>
+    <text x="50" y="46" fill="#94a3b8" font-size="9.5" class="font-main">Мгновенный PDF + QA</text>
+
+    <rect x="14" y="66" width="162" height="66" rx="8" fill="#090d16" stroke="#1e293b"/>
+    <text x="22" y="85" fill="#34d399" font-size="9" class="font-code font-bold">typst compile: 0.2s</text>
+    <text x="22" y="103" fill="#cbd5e1" font-size="8.5" class="font-code">DoD: 100% Passed</text>
+    <text x="22" y="120" fill="#a5b4fc" font-size="8.5" class="font-code">code-reviewer: OK ✓</text>
+  </g>
+
+  <!-- Top Badge Overlay -->
+  <rect x="360" y="10" width="240" height="20" rx="10" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" opacity="0.8"/>
+  <text x="480" y="24" text-anchor="middle" fill="#c7d2fe" font-size="9.5" font-weight="bold" class="font-main">SPECULATIVE SKELETON PIPELINING</text>
+</svg>
