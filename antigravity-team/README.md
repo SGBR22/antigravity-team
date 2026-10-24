@@ -1,6 +1,6 @@
-# ⚡ Antigravity Multi-Agent Ecosystem (`antigravity-team` v2.5.0)
+# ⚡ Antigravity Multi-Agent Ecosystem (`antigravity-team` v2.6.0)
 
-A modular, production-grade multi-agent ecosystem and token-saving engine designed specifically for Google Antigravity. Incorporates cutting-edge paradigms from **Andrej Karpathy's autoresearch workflows**, **ECC (Everything Claude Code)** modular architecture, and **NousResearch Hermes agent scratchpads**.
+A modular, production-grade multi-agent ecosystem and token-saving engine designed specifically for Google Antigravity. Incorporates cutting-edge paradigms from **Andrej Karpathy's autoresearch workflows**, **ECC (Everything Claude Code)** modular architecture, **Craft UI Engineering**, and **NousResearch Hermes agent scratchpads**.
 
 ---
 
@@ -16,7 +16,7 @@ A modular, production-grade multi-agent ecosystem and token-saving engine design
 | **`science-compute`** | `agents/science-compute.md` | `inherit` | COMSOL Multiphysics via MPh, FEMM, HV bushing electrophysics, GUM metrology. |
 | **`cad-specialist`** | `agents/cad-specialist.md` | `inherit` | Kompas-3D pywin32 API 5/7, Blender bpy procedural modeling, 3D printing preflight. |
 | **`typst-reporter`** | `agents/typst-reporter.md` | `inherit` | Publication-ready scientific/technical reports via Typst & `modern-g7-32` (ГОСТ 7.32). |
-| **`visual-designer`** | `agents/visual-designer.md` | `inherit` | Architecture diagrams (Mermaid), Generative UI interactive widgets, data visualization. |
+| **`visual-designer`** | `agents/visual-designer.md` | `inherit` | Exclusive visual styling & UI authority: adaptive non-AI modern design, showcases, UI/UX, Mermaid diagrams. |
 | **`web-surfer`** | `agents/web-surfer.md` | `inherit` | Targeted web search, official documentation scraping, source attribution. |
 
 ---
@@ -31,7 +31,7 @@ In accordance with `rules/AGENTS.md`, the primary Antigravity orchestrator must 
 - **Physical modeling & metrology** $\to$ `science-compute`
 - **CAD & 3D printing** $\to$ `cad-specialist`
 - **Formal reports (GOST / Typst)** $\to$ `typst-reporter`
-- **UI / Diagrams** $\to$ `visual-designer`
+- **Visual styling / UI / Showcases / Diagrams** $\to$ `visual-designer`
 
 ---
 

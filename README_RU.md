@@ -1,5 +1,5 @@
-# ⚡ Antigravity Multi-Agent Ecosystem (v2.5)
-### Высокопроизводительный инженерный сквад, параллельный конвейер и токен-экономика «Think in Code» для Google Antigravity
+# ⚡ Antigravity Multi-Agent Ecosystem (v2.6)
+### Высокопроизводительный инженерный сквад, параллельный конвейер, Craft UI и токен-экономика «Think in Code» для Google Antigravity
 
 <div align="center">
 
@@ -8,13 +8,13 @@
 [![English](https://img.shields.io/badge/Language-English-blue?style=flat-square)](README.md)
 [![Русский](https://img.shields.io/badge/Язык-Русский-red?style=flat-square)](README_RU.md)
 [![Antigravity](https://img.shields.io/badge/Platform-Google_Antigravity_2.5-4285F4?style=flat-square&logo=google&logoColor=white)](https://antigravity.google)
-[![Architecture](https://img.shields.io/badge/Architecture-10_Agents_%7C_14_Skills-8A2BE2?style=flat-square)](https://github.com/SGBR22/antigravity-team)
-[![Paradigms](https://img.shields.io/badge/Paradigms-Karpathy_•_ECC_•_Hermes-FF007F?style=flat-square)](https://github.com/SGBR22/antigravity-team)
+[![Architecture](https://img.shields.io/badge/Architecture-10_Agents_%7C_15_Skills-8A2BE2?style=flat-square)](https://github.com/SGBR22/antigravity-team)
+[![Paradigms](https://img.shields.io/badge/Paradigms-Karpathy_•_ECC_•_Craft_UI-FF007F?style=flat-square)](https://github.com/SGBR22/antigravity-team)
 [![Dev Loop](https://img.shields.io/badge/Dev_Loop-Multi--Dev_Consensus_%2B_QA-00C853?style=flat-square)](https://github.com/SGBR22/antigravity-team)
 [![Token Efficiency](https://img.shields.io/badge/Token_Shield-Think_in_Code_(-98%25)-FF6D00?style=flat-square)](https://github.com/SGBR22/antigravity-team)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
-*Полноценный инженерно-программный комплекс субагентов для Google Antigravity: проектирование в САПР (КОМПАС-3D, Blender bpy), физико-математическое моделирование (COMSOL Multiphysics MPh, FEMM, GUM), бэкенд по стандартам TDD, автономные эмпирические исследования (Karpathy Autoresearch), модульная архитектура (ECC) и публикационные отчеты по ГОСТ 7.32.*
+*Полноценный инженерно-программный комплекс субагентов для Google Antigravity: проектирование в САПР (КОМПАС-3D, Blender bpy), физико-математическое моделирование (COMSOL Multiphysics MPh, FEMM, GUM), бэкенд по стандартам TDD, автономные эмпирические исследования (Karpathy Autoresearch), современный адаптивный дизайн и витрины проектов без AI-клише (Craft UI), модульная архитектура (ECC) и публикационные отчеты по ГОСТ 7.32.*
 
 **[English](README.md)** • **Русский** • **[Интерактивная панель (showcase.html)](showcase.html)**
 
@@ -59,12 +59,12 @@
 
 Система работает по жесткому регламенту ответственности. Вам не нужно вручную просить запустить агента — Antigravity автоматически делегирует подзадачу через `invoke_subagent`:
 
-| Направление задачи | Вызываемый субагент | Строгие границы ответственности |
+| Направление задачи / Триггеры | Вызываемый субагент | Строгие границы ответственности |
 | :--- | :--- | :--- |
 | **Планирование, декомпозиция графа, контракты, ADR** | 🏛️ `system-architect` | **Главный планировщик**: формирует DAG задач, интерфейсные контракты и критерии готовности (DoD). |
-| **Диспетчеризация, запуск параллельных потоков, пайплайны** | 🎯 `coordinator` | **Диспетчер-оркестратор**: параллельный запуск агентов, синхронизация контрактов. *Запрещено писать код и верстать отчеты!* |
-| **Код бэкенда, алгоритмы, скрипты, CLI, TDD** | ⚡ `senior-dev` | Написание серверного и расчетного кода. *Запрещено писать фронтенд/HTML/CSS! Обязательное парное ревью.* |
-| **Фронтенд, UI, HTML/CSS, Tailwind, виджеты, дашборды** | 🎨 `visual-designer` | **Единый центр UI/Frontend**: создание веб-интерфейсов, графиков, Mermaid-схем, интерактивных панелей. |
+| **Диспетчеризация, запуск параллельных потоков, пайплайны** | 🎯 `coordinator` | **Диспетчер-оркестратор**: параллельный запуск агентов, синхронизация контрактов. *Запрещено писать код, верстать отчеты и дизайн!* |
+| **Код бэкенда, алгоритмы, скрипты, CLI, TDD** | ⚡ `senior-dev` | Написание серверного и расчетного кода. *Запрещено писать фронтенд/HTML/CSS/дизайн! Обязательное парное ревью.* |
+| **Визуальное оформление, дизайн проектов, UI/UX, веб-страницы, Tailwind/CSS, виджеты, дашборды, шоукейсы** | 🎨 `visual-designer` | **Единый центр дизайна и UI**: адаптивная современная эстетика без AI-клише (любые стили под контекст: Dev-tools, Swiss editorial, Industrial hardware, Refined humanist, SaaS), витрины проектов, UI/UX, дизайн-системы. |
 | **Аудит кода, безопасность, ревью diff, верификация плана** | 🛡️ `code-reviewer` | **Верификатор плана и кода**: проверка соответствия плану, поиск краевых багов, утечек памяти и слабых тестов. |
 | **Любые отчеты, ПЗ, ГОСТ 7.32, технические записки, PDF** | 📄 `typst-reporter` | **Единый центр отчетов**: верстка документов в Typst, публикационный PDF, связка с внешними `results.json`. |
 | **COMSOL, MPh, высоковольтные вводы, FEMM, погрешности** | 🧮 `science-compute` | Физико-математические расчеты, выгрузка чисел и матриц в `results.json`. *Не верстает отчеты самостоятельно!* |
@@ -123,7 +123,7 @@ flowchart LR
 antigravity-team/
 ├── antigravity-team/              # Ядро плагина (копируется в ~/.gemini/config/plugins/)
 │   ├── agents/                   # 10 специализированных субагентов (.md)
-│   ├── skills/                   # 14 директорий с навыками (SKILL.md)
+│   ├── skills/                   # 15 директорий с навыками (SKILL.md, включая craft-ui-engineering)
 │   ├── rules/                    # Правила маршрутизации и токен-экономики (AGENTS.md)
 │   └── plugin.json               # Манифест плагина
 ├── assets/                       # Графика и анимированные SVG (pipeline-anim.svg)

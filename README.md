@@ -1,5 +1,5 @@
-# ⚡ Antigravity Multi-Agent Ecosystem (v2.5)
-### High-Velocity Engineering Squad, Speculative Skeleton Pipelining & "Think in Code" Token Economy for Google Antigravity
+# ⚡ Antigravity Multi-Agent Ecosystem (v2.6)
+### High-Velocity Engineering Squad, Speculative Skeleton Pipelining, Craft UI & "Think in Code" Token Economy for Google Antigravity
 
 <div align="center">
 
@@ -8,13 +8,13 @@
 [![English](https://img.shields.io/badge/Language-English-blue?style=flat-square)](README.md)
 [![Русский](https://img.shields.io/badge/Язык-Русский-red?style=flat-square)](README_RU.md)
 [![Antigravity](https://img.shields.io/badge/Platform-Google_Antigravity_2.5-4285F4?style=flat-square&logo=google&logoColor=white)](https://antigravity.google)
-[![Architecture](https://img.shields.io/badge/Architecture-10_Agents_%7C_14_Skills-8A2BE2?style=flat-square)](https://github.com/SGBR22/antigravity-team)
-[![Paradigms](https://img.shields.io/badge/Paradigms-Karpathy_•_ECC_•_Hermes-FF007F?style=flat-square)](https://github.com/SGBR22/antigravity-team)
+[![Architecture](https://img.shields.io/badge/Architecture-10_Agents_%7C_15_Skills-8A2BE2?style=flat-square)](https://github.com/SGBR22/antigravity-team)
+[![Paradigms](https://img.shields.io/badge/Paradigms-Karpathy_•_ECC_•_Craft_UI-FF007F?style=flat-square)](https://github.com/SGBR22/antigravity-team)
 [![Dev Loop](https://img.shields.io/badge/Dev_Loop-Multi--Dev_Consensus_%2B_QA-00C853?style=flat-square)](https://github.com/SGBR22/antigravity-team)
 [![Token Efficiency](https://img.shields.io/badge/Token_Shield-Think_in_Code_(-98%25)-FF6D00?style=flat-square)](https://github.com/SGBR22/antigravity-team)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
-*An industrial-grade multi-agent engineering squad for Google Antigravity: CAD automation (Kompas-3D, Blender bpy), physical & mathematical modeling (COMSOL Multiphysics MPh, FEMM, GUM metrology), clean backend TDD, empirical autoresearch (Karpathy loop), modular system architecture (ECC), and publication-ready Typst reports.*
+*An industrial-grade multi-agent engineering squad for Google Antigravity: CAD automation (Kompas-3D, Blender bpy), physical & mathematical modeling (COMSOL Multiphysics MPh, FEMM, GUM metrology), clean backend TDD, empirical autoresearch (Karpathy loop), adaptive modern design without AI clichés (Craft UI), modular system architecture (ECC), and publication-ready Typst reports.*
 
 **English** • **[Русский](README_RU.md)** • **[Live Interactive Showcase (showcase.html)](showcase.html)**
 
@@ -59,12 +59,12 @@ An interactive, responsive dashboard styled with **Kokonut UI** dark-mode aesthe
 
 Antigravity automatically routes each incoming task domain according to strict role isolation rules:
 
-| Domain / Task | Auto-Dispatched Subagent | Strict Boundaries & Mandate |
+| Domain / Triggers | Auto-Dispatched Subagent | Strict Boundaries & Mandate |
 | :--- | :--- | :--- |
 | **Planning, DAG decomposition, contracts, ADR** | 🏛️ `system-architect` | **Master Planner**: designs dependency DAGs, interface contracts, and Definition of Done (DoD). |
-| **Dispatching, concurrent lanes, pipelines** | 🎯 `coordinator` | **Execution Dispatcher**: launches parallel lanes and synchronizes contracts. *Forbidden from writing code or reports!* |
-| **Backend code, algorithms, scripts, CLI, TDD** | ⚡ `senior-dev` | High-velocity systems engineer. *Strictly backend/logic — forbidden from writing UI/HTML/CSS!* |
-| **Frontend, UI, HTML/CSS, Tailwind, dashboards** | 🎨 `visual-designer` | **Exclusive UI Authority**: builds web interfaces, interactive panels, Mermaid diagrams, and charts. |
+| **Dispatching, concurrent lanes, pipelines** | 🎯 `coordinator` | **Execution Dispatcher**: launches parallel lanes and synchronizes contracts. *Forbidden from writing code, reports or design!* |
+| **Backend code, algorithms, scripts, CLI, TDD** | ⚡ `senior-dev` | High-velocity systems engineer. *Strictly backend/logic — forbidden from writing UI/HTML/CSS or visual design!* |
+| **Visual design, project styling, UI/UX, web pages, Tailwind, dashboards, showcases** | 🎨 `visual-designer` | **Exclusive Design & UI Authority**: adaptive modern aesthetics without AI cliches (Dev-tools, Swiss editorial, Industrial hardware, Refined humanist, SaaS), project showcases, UI/UX, design systems. |
 | **Code audit, security, diff review, plan QA** | 🛡️ `code-reviewer` | **Plan Verifier & QA Auditor**: validates plan completion (DoD), edge cases, and resource leaks. |
 | **Reports, notes, GOST 7.32, tech memos, PDF** | 📄 `typst-reporter` | **Exclusive Report Authority**: typesets all publication-grade documents via Typst using external `results.json`. |
 | **COMSOL, MPh, HV bushings, FEMM, metrology** | 🧮 `science-compute` | Electrophysics & numerical modeling; exports matrices and metrics to `results.json`. |
@@ -122,7 +122,7 @@ flowchart LR
 antigravity-team/
 ├── antigravity-team/              # Plugin core (installed to ~/.gemini/config/plugins/)
 │   ├── agents/                   # 10 specialized subagents (.md)
-│   ├── skills/                   # 14 skill directories (SKILL.md)
+│   ├── skills/                   # 15 skill directories (SKILL.md, including craft-ui-engineering)
 │   ├── rules/                    # Auto-Dispatch & Token rules (AGENTS.md)
 │   └── plugin.json               # Plugin manifest
 ├── assets/                       # Graphics & animated SVG (pipeline-anim.svg)

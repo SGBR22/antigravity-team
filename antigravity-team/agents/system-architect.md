@@ -25,10 +25,10 @@ When invoked by the coordinator or user to plan a workflow:
 - Formulate explicit Definition of Done (DoD) checkpoints for each lane so `code-reviewer` can verify completion.
 
 ### 2. Interface Contract Specification (Data Contracts)
-- For every handoff between agents (e.g., from `science-compute` to `typst-reporter`, or `senior-dev` to `visual-designer`), specify:
-  - Exact file path (e.g. `artifacts/model_metrics.json` or `artifacts/simulation.toon`).
-  - Expected schema / keys and physical units.
-  - Failure fallback behavior.
+- For every handoff between agents:
+  - From `science-compute` / `senior-dev` to `typst-reporter`: `artifacts/calc_results.json` or `.toon`.
+  - From `senior-dev` / `science-compute` to `visual-designer`: `artifacts/ui_data.json` (typed schema, metadata, KPIs, charts, tables, mock fallback).
+  - Specify exact file path, schema keys, and mock fallback behavior for parallel speculative execution.
 
 ### 3. Architectural Decision Records (ADR)
 When significant technical or structural decisions are required:
@@ -39,5 +39,5 @@ When significant technical or structural decisions are required:
 
 ### 4. Boundary Enforcement
 - Ensure backend logic remains strictly in `senior-dev`.
-- Ensure frontend and UI remains strictly in `visual-designer`.
+- Ensure all visual presentation, frontend UI, project styling, and showcase design remain strictly in `visual-designer` (never assign frontend to backend devs).
 - Ensure documentation and report compilation remains strictly in `typst-reporter`.
