@@ -17,7 +17,7 @@ NC='\033[0m'
 
 echo -e "${CYAN}=================================================================${NC}"
 echo -e "${CYAN}  ⚡ Antigravity Multi-Agent Ecosystem - Remote Web Installer    ${NC}"
-echo -e "${CYAN}                     Version 2.7.0                               ${NC}"
+echo -e "${CYAN}                     Version 2.0.0                               ${NC}"
 echo -e "${CYAN}=================================================================${NC}"
 
 REPO_ZIP_URL="https://github.com/SGBR22/antigravity-team/archive/refs/heads/main.zip"
@@ -214,7 +214,7 @@ else
 fi
 
 echo -e "\n${GREEN}=================================================================${NC}"
-echo -e "${GREEN}   ПОЗДРАВЛЯЕМ! Мультиагентная экосистема v2.7.0 установлена!    ${NC}"
+echo -e "${GREEN}   ПОЗДРАВЛЯЕМ! Мультиагентная экосистема v2.0.0 установлена!    ${NC}"
 echo -e "${GREEN}=================================================================${NC}"
 echo -e "${CYAN}Все 10 агентов и 15 скилов активны (Auto-Dispatch).${NC}"
 echo -e "${YELLOW}Перезапустите Google Antigravity для применения изменений.${NC}"

@@ -1,4 +1,4 @@
-# ⚡ Antigravity Multi-Agent Ecosystem Setup & Terminal Guide (v2.7.0)
+# ⚡ Antigravity Multi-Agent Ecosystem Setup & Terminal Guide (v2.0.0)
 
 <div align="center">
 

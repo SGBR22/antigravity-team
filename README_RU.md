@@ -2,7 +2,7 @@
 
 ![Баннер мультиагентной команды Antigravity](assets/hero-banner.svg)
 
-[![Релиз](https://img.shields.io/badge/Релиз-v2.7.0_Terminal-10b981?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/SGBR22/antigravity-team)
+[![Релиз](https://img.shields.io/badge/Релиз-v2.0.0_Terminal-10b981?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/SGBR22/antigravity-team)
 [![Платформы](https://img.shields.io/badge/Платформы-Linux_Терминал_•_Windows_PS-6366f1?style=for-the-badge&logo=linux&logoColor=white)](SETUP_GUIDE_RU.md)
 [![Лицензия](https://img.shields.io/badge/Лицензия-MIT-blue?style=for-the-badge)](LICENSE)
 
@@ -229,14 +229,14 @@ irm https://raw.githubusercontent.com/SGBR22/antigravity-team/main/install.ps1 |
 ```text
 antigravity-team/
 ├── assets/                          # Векторные SVG-диаграммы и схемы высокого разрешения
-│   ├── hero-banner.svg              # Футуристичный баннер экосистемы (v2.7.0)
+│   ├── hero-banner.svg              # Футуристичный баннер экосистемы (v2.0.0)
 │   ├── architecture-dispatch.svg    # Схема автодиспетчеризации и топологии агентов
 │   ├── speculative-pipelining.svg   # Сравнение параллельного конвейера с последовательным
 │   ├── multi-dev-loop.svg           # Цикл парного консенсуса разработки и TDD
 │   ├── token-shield.svg             # График бенчмарка экономии токенов (Active Token Shield)
 │   └── cross-platform-matrix.svg    # Матрица кросс-платформенного паритета Linux и Windows
 ├── antigravity-team/                # Каталог подключаемого плагина Antigravity
-│   ├── plugin.json                  # Манифест экосистемы и подсказки (v2.7.0)
+│   ├── plugin.json                  # Манифест экосистемы и подсказки (v2.0.0)
 │   ├── agents/                      # Манифесты инструкций 10 субагентов
 │   ├── rules/AGENTS.md              # Правила управления и протокол Auto-Dispatch
 │   └── skills/                      # 15 каталогов специализированных навыков (SKILL.md)

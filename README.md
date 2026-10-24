@@ -2,7 +2,7 @@
 
 ![Antigravity Multi-Agent Squad Banner](assets/hero-banner.svg)
 
-[![Release](https://img.shields.io/badge/Release-v2.7.0_Terminal-10b981?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/SGBR22/antigravity-team)
+[![Release](https://img.shields.io/badge/Release-v2.0.0_Terminal-10b981?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/SGBR22/antigravity-team)
 [![Platform](https://img.shields.io/badge/Platform-Linux_Terminal_•_Windows_PS-6366f1?style=for-the-badge&logo=linux&logoColor=white)](SETUP_GUIDE.md)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
@@ -237,14 +237,14 @@ Inspired by Andrej Karpathy's autoresearch standard: **never dump entire logs or
 ```text
 antigravity-team/
 ├── assets/                          # High-fidelity vector SVG diagrams & badges
-│   ├── hero-banner.svg              # Futuristic dark header banner (v2.7.0)
+│   ├── hero-banner.svg              # Futuristic dark header banner (v2.0.0)
 │   ├── architecture-dispatch.svg    # Auto-Dispatch & multi-agent routing diagram
 │   ├── speculative-pipelining.svg   # Speculative pipelining timeline comparison
 │   ├── multi-dev-loop.svg           # Collaborative TDD & consensus QA loop
 │   ├── token-shield.svg             # Active Token Shield benchmark chart
 │   └── cross-platform-matrix.svg    # Linux Terminal vs Windows parity matrix
 ├── antigravity-team/                # Global plugin bundle directory
-│   ├── plugin.json                  # Ecosystem metadata & suggested prompts (v2.7.0)
+│   ├── plugin.json                  # Ecosystem metadata & suggested prompts (v2.0.0)
 │   ├── agents/                      # 10 specialized agent instruction manifests
 │   ├── rules/AGENTS.md              # Ironclad governance & auto-dispatch rules
 │   └── skills/                      # 15 progressive skill folders with SKILL.md

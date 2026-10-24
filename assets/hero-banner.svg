@@ -54,7 +54,7 @@
   <g transform="translate(60, 48)">
     <rect x="0" y="0" width="158" height="26" rx="13" fill="#10b981" fill-opacity="0.12" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
     <circle cx="14" cy="13" r="4" fill="#10b981"/>
-    <text x="26" y="17" fill="#10b981" class="font-mono" font-size="11" font-weight="600" letter-spacing="1">SYSTEM READY • v2.7.0</text>
+    <text x="26" y="17" fill="#10b981" class="font-mono" font-size="11" font-weight="600" letter-spacing="1">SYSTEM READY • v2.0.0</text>
   </g>
 
   <!-- Main Hero Icon (Lightning Core) -->
@@ -120,6 +120,6 @@
 
   <!-- Sub-footer Terminal Ping -->
   <g transform="translate(60, 325)">
-    <text x="0" y="10" fill="#64748b" class="font-mono" font-size="11">antigravity:~$ agents --status active --mode concurrent --protocol v2.7.0</text>
+    <text x="0" y="10" fill="#64748b" class="font-mono" font-size="11">antigravity:~$ agents --status active --mode concurrent --protocol v2.0.0</text>
   </g>
 </svg>

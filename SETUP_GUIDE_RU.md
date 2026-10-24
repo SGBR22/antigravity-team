@@ -1,4 +1,4 @@
-# ⚡ Руководство по установке и настройке Antigravity Multi-Agent Squad в терминале (v2.7.0)
+# ⚡ Руководство по установке и настройке Antigravity Multi-Agent Squad в терминале (v2.0.0)
 
 <div align="center">
 

@@ -10,7 +10,7 @@
 $ErrorActionPreference = "Stop"
 
 Write-Host "=================================================================" -ForegroundColor Cyan
-Write-Host "  Установка Antigravity Multi-Agent Team (v2.7.0)               " -ForegroundColor Cyan
+Write-Host "  Установка Antigravity Multi-Agent Team (v2.0.0)               " -ForegroundColor Cyan
 Write-Host "=================================================================" -ForegroundColor Cyan
 
 # 1. Определение путей
