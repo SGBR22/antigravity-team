@@ -5,6 +5,7 @@ brain/
 *.log
 *.zip
 export-team.ps1
+export-team.sh
 КАК_ПЕРЕДАТЬ_ДРУГУ.md
 
 # Python

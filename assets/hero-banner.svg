@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06080d"/>
+      <stop offset="50%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#080c14"/>
+    </linearGradient>
+    <linearGradient id="primary-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="badge-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+    
+    <!-- Patterns -->
+    <pattern id="dot-grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#334155" fill-opacity="0.25"/>
+    </pattern>
+
+    <!-- Filter Glow -->
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)"/>
+  <rect width="1200" height="360" rx="16" fill="url(#dot-grid)"/>
+
+  <!-- Border Frame -->
+  <rect x="0.5" y="0.5" width="1199" height="359" rx="15.5" fill="none" stroke="#1e293b" stroke-width="1"/>
+  <rect x="0" y="0" width="1200" height="3" fill="url(#primary-glow)"/>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="150" cy="80" r="180" fill="#10b981" fill-opacity="0.06" filter="url(#soft-glow)"/>
+  <circle cx="1050" cy="260" r="220" fill="#6366f1" fill-opacity="0.08" filter="url(#soft-glow)"/>
+  <circle cx="600" cy="180" r="140" fill="#ec4899" fill-opacity="0.04" filter="url(#soft-glow)"/>
+
+  <!-- Header Category & Status Badge -->
+  <g transform="translate(60, 48)">
+    <rect x="0" y="0" width="158" height="26" rx="13" fill="#10b981" fill-opacity="0.12" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="14" cy="13" r="4" fill="#10b981"/>
+    <text x="26" y="17" fill="#10b981" class="font-mono" font-size="11" font-weight="600" letter-spacing="1">SYSTEM READY • v2.7.0</text>
+  </g>
+
+  <!-- Main Hero Icon (Lightning Core) -->
+  <g transform="translate(60, 96)">
+    <!-- Shield / Hexagon Frame -->
+    <rect x="0" y="0" width="76" height="76" rx="16" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <rect x="1" y="1" width="74" height="74" rx="15" fill="none" stroke="url(#cyan-glow)" stroke-width="1.5" stroke-opacity="0.6"/>
+    <!-- Lightning Bolt SVG Path -->
+    <path d="M42 16 L22 42 L36 42 L32 62 L54 34 L40 34 Z" fill="url(#cyan-glow)" filter="drop-shadow(0 0 6px rgba(6,182,212,0.8))"/>
+  </g>
+
+  <!-- Hero Typography -->
+  <g transform="translate(156, 112)">
+    <text x="0" y="24" fill="#f8fafc" class="font-sans" font-size="34" font-weight="800" letter-spacing="-0.5">ANTIGRAVITY MULTI-AGENT SQUAD</text>
+    <text x="0" y="52" fill="#94a3b8" class="font-sans" font-size="16" font-weight="400" letter-spacing="0.2">Autonomous Engineering Squad • Speculative Pipelining • Linux CLI &amp; Windows PS</text>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="60" y1="200" x2="1140" y2="200" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Capabilities Badges Grid -->
+  <g transform="translate(60, 225)">
+    <!-- Badge 1: 10 Core Agents -->
+    <g transform="translate(0, 0)">
+      <rect width="195" height="72" rx="10" fill="url(#badge-grad)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="0" y="0" width="195" height="1" fill="#10b981" fill-opacity="0.6"/>
+      <text x="16" y="28" fill="#10b981" class="font-mono" font-size="11" font-weight="600">ORCHESTRATION</text>
+      <text x="16" y="52" fill="#f1f5f9" class="font-sans" font-size="16" font-weight="700">10 Spec Agents</text>
+    </g>
+
+    <!-- Badge 2: 15 Domain Skills -->
+    <g transform="translate(210, 0)">
+      <rect width="195" height="72" rx="10" fill="url(#badge-grad)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="0" y="0" width="195" height="1" fill="#6366f1" fill-opacity="0.6"/>
+      <text x="16" y="28" fill="#6366f1" class="font-mono" font-size="11" font-weight="600">CAPABILITIES</text>
+      <text x="16" y="52" fill="#f1f5f9" class="font-sans" font-size="16" font-weight="700">15 Power Skills</text>
+    </g>
+
+    <!-- Badge 3: Cross Platform Parity -->
+    <g transform="translate(420, 0)">
+      <rect width="220" height="72" rx="10" fill="url(#badge-grad)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="0" y="0" width="220" height="1" fill="#06b6d4" fill-opacity="0.6"/>
+      <text x="16" y="28" fill="#06b6d4" class="font-mono" font-size="11" font-weight="600">RUNTIME PARITY</text>
+      <text x="16" y="52" fill="#f1f5f9" class="font-sans" font-size="16" font-weight="700">Linux CLI + Win PS</text>
+    </g>
+
+    <!-- Badge 4: Zero-Lag Join -->
+    <g transform="translate(655, 0)">
+      <rect width="210" height="72" rx="10" fill="url(#badge-grad)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="0" y="0" width="210" height="1" fill="#ec4899" fill-opacity="0.6"/>
+      <text x="16" y="28" fill="#ec4899" class="font-mono" font-size="11" font-weight="600">CONCURRENCY</text>
+      <text x="16" y="52" fill="#f1f5f9" class="font-sans" font-size="16" font-weight="700">Zero-Lag Pipelining</text>
+    </g>
+
+    <!-- Badge 5: Token Shield -->
+    <g transform="translate(880, 0)">
+      <rect width="200" height="72" rx="10" fill="url(#badge-grad)" stroke="#1e293b" stroke-width="1"/>
+      <rect x="0" y="0" width="200" height="1" fill="#f59e0b" fill-opacity="0.6"/>
+      <text x="16" y="28" fill="#f59e0b" class="font-mono" font-size="11" font-weight="600">ACTIVE TOKEN SHIELD</text>
+      <text x="16" y="52" fill="#f1f5f9" class="font-sans" font-size="16" font-weight="700">Think in Code (-98%)</text>
+    </g>
+  </g>
+
+  <!-- Sub-footer Terminal Ping -->
+  <g transform="translate(60, 325)">
+    <text x="0" y="10" fill="#64748b" class="font-mono" font-size="11">antigravity:~$ agents --status active --mode concurrent --protocol v2.7.0</text>
+  </g>
+</svg>

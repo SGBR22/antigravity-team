@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 580" width="1100" height="580">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06080d"/>
+      <stop offset="50%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#0c101d"/>
+    </linearGradient>
+    <pattern id="dot-grid-2" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#334155" fill-opacity="0.2"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#6366f1"/>
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrow-pink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#ec4899"/>
+    </marker>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#06b6d4"/>
+    </marker>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1100" height="580" rx="14" fill="url(#bg2)"/>
+  <rect width="1100" height="580" rx="14" fill="url(#dot-grid-2)"/>
+  <rect x="0.5" y="0.5" width="1099" height="579" rx="13.5" fill="none" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Header -->
+  <g transform="translate(48, 38)">
+    <text x="0" y="0" fill="#f8fafc" class="font-sans" font-size="20" font-weight="700">AUTO-DISPATCH &amp; SQUAD TOPOLOGY</text>
+    <text x="0" y="22" fill="#94a3b8" class="font-sans" font-size="13">Strict Interface Contracts • Concurrent Fan-Out • Independent Execution Domains</text>
+  </g>
+
+  <!-- Pipeline Connection Lines (Behind Nodes) -->
+  <!-- Planner to Coordinator -->
+  <path d="M 230 190 L 290 190" stroke="#6366f1" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Coordinator to Squads Fan-Out -->
+  <path d="M 460 170 L 530 100 L 550 100" stroke="#6366f1" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 460 180 L 520 170 L 550 170" stroke="#ec4899" stroke-width="1.8" fill="none" marker-end="url(#arrow-pink)"/>
+  <path d="M 460 190 L 550 240" stroke="#06b6d4" stroke-width="1.8" fill="none" marker-end="url(#arrow-cyan)"/>
+  <path d="M 460 200 L 520 310 L 550 310" stroke="#10b981" stroke-width="1.8" fill="none" marker-end="url(#arrow-emerald)"/>
+  <path d="M 460 210 L 530 380 L 550 380" stroke="#f59e0b" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 460 220 L 520 450 L 550 450" stroke="#8b5cf6" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Squads to QA Gate Fan-In -->
+  <path d="M 780 100 L 820 100 L 850 180" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+  <path d="M 780 170 L 820 170 L 850 190" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+  <path d="M 780 240 L 825 240 L 850 200" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+  <path d="M 780 310 L 825 310 L 850 210" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+  <path d="M 780 380 L 820 380 L 850 220" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+  <path d="M 780 450 L 820 450 L 850 230" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+  <path d="M 850 205 L 870 205" stroke="#10b981" stroke-width="2" marker-end="url(#arrow-emerald)"/>
+
+  <!-- STAGE 1: PLANNER -->
+  <g transform="translate(48, 140)">
+    <rect width="180" height="100" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <rect x="0" y="0" width="180" height="3" fill="#6366f1"/>
+    <text x="14" y="24" fill="#a5b4fc" class="font-mono" font-size="10" font-weight="700">TIER 1: ARCHITECT</text>
+    <text x="14" y="48" fill="#f8fafc" class="font-sans" font-size="15" font-weight="700">system-architect</text>
+    <text x="14" y="70" fill="#94a3b8" class="font-sans" font-size="12">• DAG Decomposition</text>
+    <text x="14" y="86" fill="#94a3b8" class="font-sans" font-size="12">• Interface Contracts</text>
+  </g>
+
+  <!-- STAGE 2: COORDINATOR -->
+  <g transform="translate(290, 140)">
+    <rect width="170" height="100" rx="10" fill="#0f172a" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="0" y="0" width="170" height="3" fill="#6366f1"/>
+    <text x="14" y="24" fill="#818cf8" class="font-mono" font-size="10" font-weight="700">TIER 2: DISPATCH</text>
+    <text x="14" y="48" fill="#f8fafc" class="font-sans" font-size="15" font-weight="700">coordinator</text>
+    <text x="14" y="70" fill="#94a3b8" class="font-sans" font-size="12">• Zero-Lag Join</text>
+    <text x="14" y="86" fill="#94a3b8" class="font-sans" font-size="12">• Multi-lane Fan-out</text>
+  </g>
+
+  <!-- STAGE 3: EXECUTION SQUADS (Lane 1 to Lane 6) -->
+  <!-- 1. senior-dev -->
+  <g transform="translate(550, 72)">
+    <rect width="230" height="56" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="0" y="0" width="3" height="56" fill="#6366f1"/>
+    <text x="14" y="22" fill="#f8fafc" class="font-sans" font-size="13" font-weight="700">⚡ senior-dev</text>
+    <text x="14" y="40" fill="#94a3b8" class="font-mono" font-size="11">Core Code, TDD, CLI, APIs</text>
+    <rect x="156" y="8" width="62" height="16" rx="4" fill="#1e1e38"/>
+    <text x="162" y="20" fill="#a5b4fc" class="font-mono" font-size="9">Code/CLI</text>
+  </g>
+
+  <!-- 2. visual-designer -->
+  <g transform="translate(550, 142)">
+    <rect width="230" height="56" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="0" y="0" width="3" height="56" fill="#ec4899"/>
+    <text x="14" y="22" fill="#f8fafc" class="font-sans" font-size="13" font-weight="700">🎨 visual-designer</text>
+    <text x="14" y="40" fill="#ec4899" class="font-mono" font-size="11">ui_data.json → SVGs &amp; UI</text>
+    <rect x="146" y="8" width="72" height="16" rx="4" fill="#3b112c"/>
+    <text x="152" y="20" fill="#f472b6" class="font-mono" font-size="9">UI &amp; Vector</text>
+  </g>
+
+  <!-- 3. typst-reporter -->
+  <g transform="translate(550, 212)">
+    <rect width="230" height="56" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="0" y="0" width="3" height="56" fill="#06b6d4"/>
+    <text x="14" y="22" fill="#f8fafc" class="font-sans" font-size="13" font-weight="700">📄 typst-reporter</text>
+    <text x="14" y="40" fill="#06b6d4" class="font-mono" font-size="11">results.json → PDF / G7.32</text>
+    <rect x="140" y="8" width="78" height="16" rx="4" fill="#082f49"/>
+    <text x="146" y="20" fill="#38bdf8" class="font-mono" font-size="9">Typst Paper</text>
+  </g>
+
+  <!-- 4. science-compute -->
+  <g transform="translate(550, 282)">
+    <rect width="230" height="56" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="0" y="0" width="3" height="56" fill="#10b981"/>
+    <text x="14" y="22" fill="#f8fafc" class="font-sans" font-size="13" font-weight="700">🧮 science-compute</text>
+    <text x="14" y="40" fill="#10b981" class="font-mono" font-size="11">COMSOL / FEMM / Math</text>
+    <rect x="136" y="8" width="82" height="16" rx="4" fill="#052e16"/>
+    <text x="142" y="20" fill="#4ade80" class="font-mono" font-size="9">Simulation</text>
+  </g>
+
+  <!-- 5. cad-specialist -->
+  <g transform="translate(550, 352)">
+    <rect width="230" height="56" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="0" y="0" width="3" height="56" fill="#f59e0b"/>
+    <text x="14" y="22" fill="#f8fafc" class="font-sans" font-size="13" font-weight="700">📐 cad-specialist</text>
+    <text x="14" y="40" fill="#f59e0b" class="font-mono" font-size="11">KOMPAS-3D &amp; Blender bpy</text>
+    <rect x="148" y="8" width="70" height="16" rx="4" fill="#451a03"/>
+    <text x="154" y="20" fill="#fbbf24" class="font-mono" font-size="9">CAD / 3D</text>
+  </g>
+
+  <!-- 6. researcher -->
+  <g transform="translate(550, 422)">
+    <rect width="230" height="56" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="0" y="0" width="3" height="56" fill="#8b5cf6"/>
+    <text x="14" y="22" fill="#f8fafc" class="font-sans" font-size="13" font-weight="700">🔬 researcher &amp; web</text>
+    <text x="14" y="40" fill="#a78bfa" class="font-mono" font-size="11">Hypothesis → Probe → Insight</text>
+    <rect x="148" y="8" width="70" height="16" rx="4" fill="#2e1065"/>
+    <text x="154" y="20" fill="#c4b5fd" class="font-mono" font-size="9">Research</text>
+  </g>
+
+  <!-- STAGE 4: QA GATE & VERIFIER -->
+  <g transform="translate(870, 155)">
+    <rect width="180" height="100" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="0" y="0" width="180" height="3" fill="#10b981"/>
+    <text x="14" y="24" fill="#10b981" class="font-mono" font-size="10" font-weight="700">TIER 3: QA GATE</text>
+    <text x="14" y="48" fill="#f8fafc" class="font-sans" font-size="15" font-weight="700">code-reviewer</text>
+    <text x="14" y="70" fill="#94a3b8" class="font-sans" font-size="12">• Plan Verification</text>
+    <text x="14" y="86" fill="#94a3b8" class="font-sans" font-size="12">• Invariant &amp; Leak Audit</text>
+  </g>
+
+  <!-- Bottom Data Contracts Bar -->
+  <g transform="translate(48, 510)">
+    <rect width="1004" height="42" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+    <text x="18" y="26" fill="#64748b" class="font-mono" font-size="11" font-weight="600">STRUCTURED CONTRACTS:</text>
+    
+    <g transform="translate(200, 11)">
+      <rect width="160" height="20" rx="4" fill="#1e293b"/>
+      <text x="10" y="14" fill="#38bdf8" class="font-mono" font-size="10">artifacts/calc_results.json</text>
+    </g>
+    
+    <g transform="translate(380, 11)">
+      <rect width="145" height="20" rx="4" fill="#1e293b"/>
+      <text x="10" y="14" fill="#f472b6" class="font-mono" font-size="10">artifacts/ui_data.json</text>
+    </g>
+
+    <g transform="translate(545, 11)">
+      <rect width="125" height="20" rx="4" fill="#1e293b"/>
+      <text x="10" y="14" fill="#4ade80" class="font-mono" font-size="10">report.typ / G7.32</text>
+    </g>
+
+    <g transform="translate(690, 11)">
+      <rect width="145" height="20" rx="4" fill="#1e293b"/>
+      <text x="10" y="14" fill="#fbbf24" class="font-mono" font-size="10">TOON Dense Payload</text>
+    </g>
+  </g>
+</svg>

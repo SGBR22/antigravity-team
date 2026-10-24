@@ -1,8 +1,8 @@
 {
   "name": "antigravity-team",
   "displayName": "Antigravity Multi-Agent Ecosystem",
-  "version": "2.6.0",
-  "description": "High-velocity multi-agent engineering squad: 10 specialized agents and 15 skills based on Karpathy Autoresearch, ECC modular architecture, Craft UI Engineering, and NousResearch Hermes reasoning scratchpads. Includes Auto-Dispatch, Senior Dev, Code Reviewer, Researcher, System Architect, Science Compute, CAD Specialist, Typst Reporter, Visual Designer, and Coordinator.",
+  "version": "2.7.0",
+  "description": "High-velocity multi-agent engineering squad with cross-platform Linux Terminal and Windows support: 10 specialized agents and 15 skills based on Karpathy Autoresearch, ECC modular architecture, Craft UI Engineering, and NousResearch Hermes reasoning scratchpads. Includes Auto-Dispatch, Senior Dev, Code Reviewer, Researcher, System Architect, Science Compute, CAD Specialist, Typst Reporter, Visual Designer, and Coordinator.",
   "suggestedPrompts": [
     "visual-designer, оформи проект в современном стиле без AI-клише и настрой интерактивный дашборд",
     "researcher, исследуй библиотеку и проведи бенчмарк через автономный скрипт",

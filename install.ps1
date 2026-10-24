@@ -1,4 +1,4 @@
-# ==============================================================================
+﻿# ==============================================================================
 # Antigravity Multi-Agent Ecosystem - 1-Line Remote Web Installer
 # ==============================================================================
 # Usage:
@@ -9,7 +9,7 @@
 $ErrorActionPreference = "Stop"
 
 Write-Host "=================================================================" -ForegroundColor Cyan
-Write-Host "  ⚡ Antigravity Multi-Agent Ecosystem - Remote Web Installer   " -ForegroundColor Cyan
+Write-Host "  ⚡ Antigravity Multi-Agent Ecosystem - Remote Web Installer (v2.7.0)" -ForegroundColor Cyan
 Write-Host "=================================================================" -ForegroundColor Cyan
 
 $repoZipUrl = "https://github.com/SGBR22/antigravity-team/archive/refs/heads/main.zip"
@@ -73,9 +73,9 @@ try {
     Write-Host "Плагин 'antigravity-team' успешно активирован." -ForegroundColor Green
 
     Write-Host "`n=================================================================" -ForegroundColor Green
-    Write-Host "   ПОЗДРАВЛЯЕМ! Мультиагентная экосистема успешно установлена!  " -ForegroundColor Green
+    Write-Host "   ПОЗДРАВЛЯЕМ! Мультиагентная экосистема v2.7.0 успешно установлена!  " -ForegroundColor Green
     Write-Host "=================================================================" -ForegroundColor Green
-    Write-Host "Все 10 агентов и 14 навыков активированы (Auto-Dispatch)." -ForegroundColor Cyan
+    Write-Host "Все 10 агентов и 15 навыков активированы (Auto-Dispatch)." -ForegroundColor Cyan
     Write-Host "Перезапустите Google Antigravity для применения изменений." -ForegroundColor Yellow
 }
 finally {

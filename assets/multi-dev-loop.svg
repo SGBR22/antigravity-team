@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 380" width="1100" height="380">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06080d"/>
+      <stop offset="50%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <marker id="arrow4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#6366f1"/>
+    </marker>
+    <marker id="arrow4-emerald" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrow4-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1100" height="380" rx="14" fill="url(#bg4)"/>
+  <rect x="0.5" y="0.5" width="1099" height="379" rx="13.5" fill="none" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Header -->
+  <g transform="translate(48, 38)">
+    <text x="0" y="0" fill="#f8fafc" class="font-sans" font-size="20" font-weight="700">MULTI-DEV CONSENSUS &amp; TDD VERIFICATION LOOP</text>
+    <text x="0" y="22" fill="#94a3b8" class="font-sans" font-size="13">Pair Engineering Paradigm • Red-Green-Refactor • Invariant &amp; Leak Auditing</text>
+  </g>
+
+  <!-- Connecting Arrows -->
+  <path d="M 235 180 L 275 180" stroke="#6366f1" stroke-width="2" marker-end="url(#arrow4)"/>
+  <path d="M 465 180 L 505 180" stroke="#6366f1" stroke-width="2" marker-end="url(#arrow4)"/>
+  <path d="M 775 180 L 815 180" stroke="#10b981" stroke-width="2" marker-end="url(#arrow4-emerald)"/>
+
+  <!-- TDD Inner Feedback Arc (Green -> Red if failed) -->
+  <path d="M 720 230 C 720 265, 560 265, 560 230" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="3 3" fill="none" marker-end="url(#arrow4-red)"/>
+  <text x="615" y="280" fill="#f87171" class="font-mono" font-size="10">Test Failure Loop (RED)</text>
+
+  <!-- Step 1: senior-dev Proposal -->
+  <g transform="translate(48, 110)">
+    <rect width="185" height="135" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <rect x="0" y="0" width="185" height="3" fill="#6366f1"/>
+    <text x="14" y="24" fill="#818cf8" class="font-mono" font-size="10" font-weight="700">STEP 1: ARCH PROPOSAL</text>
+    <text x="14" y="48" fill="#f8fafc" class="font-sans" font-size="15" font-weight="700">senior-dev</text>
+    <text x="14" y="72" fill="#94a3b8" class="font-sans" font-size="12">• Boundary Definition</text>
+    <text x="14" y="90" fill="#94a3b8" class="font-sans" font-size="12">• I/O Schema Spec</text>
+    <text x="14" y="108" fill="#94a3b8" class="font-sans" font-size="12">• Edge Case Matrix</text>
+  </g>
+
+  <!-- Step 2: code-reviewer Invariant Check -->
+  <g transform="translate(275, 110)">
+    <rect width="190" height="135" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <rect x="0" y="0" width="190" height="3" fill="#ec4899"/>
+    <text x="14" y="24" fill="#f472b6" class="font-mono" font-size="10" font-weight="700">STEP 2: PAIR REVIEW</text>
+    <text x="14" y="48" fill="#f8fafc" class="font-sans" font-size="15" font-weight="700">code-reviewer</text>
+    <text x="14" y="72" fill="#94a3b8" class="font-sans" font-size="12">• Memory &amp; COM Leaks</text>
+    <text x="14" y="90" fill="#94a3b8" class="font-sans" font-size="12">• Invariant Regression</text>
+    <text x="14" y="108" fill="#94a3b8" class="font-sans" font-size="12">• Test Coverage Spec</text>
+  </g>
+
+  <!-- Step 3: TDD Engine (Red-Green-Refactor) -->
+  <g transform="translate(505, 105)">
+    <rect width="270" height="145" rx="10" fill="#0b1120" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="0" y="0" width="270" height="3" fill="#10b981"/>
+    <text x="14" y="24" fill="#a5b4fc" class="font-mono" font-size="10" font-weight="700">STEP 3: TDD ENGINE</text>
+    
+    <!-- Red Pill -->
+    <rect x="14" y="38" width="70" height="26" rx="4" fill="#450a0a" stroke="#ef4444" stroke-width="1"/>
+    <text x="24" y="55" fill="#fca5a5" class="font-mono" font-size="11" font-weight="700">1. RED</text>
+
+    <!-- Green Pill -->
+    <rect x="96" y="38" width="80" height="26" rx="4" fill="#052e16" stroke="#10b981" stroke-width="1"/>
+    <text x="106" y="55" fill="#86efac" class="font-mono" font-size="11" font-weight="700">2. GREEN</text>
+
+    <!-- Refactor Pill -->
+    <rect x="188" y="38" width="68" height="26" rx="4" fill="#1e1b4b" stroke="#6366f1" stroke-width="1"/>
+    <text x="194" y="55" fill="#c7d2fe" class="font-mono" font-size="11" font-weight="700">3. CLEAN</text>
+
+    <!-- Details -->
+    <text x="14" y="90" fill="#cbd5e1" class="font-mono" font-size="11">pytest -q (Headless Runner)</text>
+    <text x="14" y="112" fill="#94a3b8" class="font-sans" font-size="12">• Zero-defect assurance</text>
+    <text x="14" y="130" fill="#94a3b8" class="font-sans" font-size="12">• Boundary tests verified</text>
+  </g>
+
+  <!-- Step 4: Verification against DoD -->
+  <g transform="translate(815, 110)">
+    <rect width="235" height="135" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="0" y="0" width="235" height="3" fill="#10b981"/>
+    <text x="14" y="24" fill="#10b981" class="font-mono" font-size="10" font-weight="700">STEP 4: FINAL GATE (DoD)</text>
+    <text x="14" y="48" fill="#f8fafc" class="font-sans" font-size="15" font-weight="700">Verified &amp; Committed</text>
+    <text x="14" y="72" fill="#94a3b8" class="font-sans" font-size="12">✔ All Plan Tasks Complete</text>
+    <text x="14" y="90" fill="#94a3b8" class="font-sans" font-size="12">✔ 100% Tests Pass Headless</text>
+    <text x="14" y="108" fill="#94a3b8" class="font-sans" font-size="12">✔ Atomic Conventional Commit</text>
+  </g>
+
+  <!-- Bottom Tip -->
+  <g transform="translate(48, 315)">
+    <rect width="1004" height="36" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1"/>
+    <text x="18" y="23" fill="#64748b" class="font-mono" font-size="11">RULE: No production code change merges without pair verification and headless TDD confirmation.</text>
+  </g>
+</svg>

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="1100" height="360">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06080d"/>
+      <stop offset="50%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#0a0d16"/>
+    </linearGradient>
+    <linearGradient id="red-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <linearGradient id="green-shield" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1100" height="360" rx="14" fill="url(#bg5)"/>
+  <rect x="0.5" y="0.5" width="1099" height="359" rx="13.5" fill="none" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Header -->
+  <g transform="translate(48, 38)">
+    <text x="0" y="0" fill="#f8fafc" class="font-sans" font-size="20" font-weight="700">ACTIVE TOKEN SHIELD • KARPATHY "THINK IN CODE"</text>
+    <text x="0" y="22" fill="#94a3b8" class="font-sans" font-size="13">Headless Probe Scripts &amp; TOON Serialization vs Brute-Force Context Ingestion</text>
+  </g>
+
+  <!-- COMPARISON BARS -->
+  
+  <!-- Bar 1: Brute Force Dump -->
+  <g transform="translate(48, 95)">
+    <text x="0" y="20" fill="#f87171" class="font-sans" font-size="14" font-weight="700">Brute-Force Log / File Dump</text>
+    <text x="0" y="38" fill="#64748b" class="font-mono" font-size="11">cat massive.log (Entire dump)</text>
+
+    <!-- Bar Container -->
+    <rect x="250" y="5" width="580" height="36" rx="6" fill="#1e293b"/>
+    <rect x="250" y="5" width="580" height="36" rx="6" fill="url(#red-bar)"/>
+    <text x="264" y="28" fill="#ffffff" class="font-mono" font-size="13" font-weight="700">18,400 Tokens Ingested</text>
+
+    <!-- Stats Box -->
+    <g transform="translate(850, 4)">
+      <rect width="150" height="38" rx="6" fill="#450a0a" stroke="#7f1d1d" stroke-width="1"/>
+      <text x="14" y="24" fill="#fca5a5" class="font-mono" font-size="12" font-weight="600">4.2s • $0.0368</text>
+    </g>
+  </g>
+
+  <!-- Bar 2: Antigravity Headless Probe -->
+  <g transform="translate(48, 175)">
+    <text x="0" y="20" fill="#34d399" class="font-sans" font-size="14" font-weight="700">Antigravity Headless Probe</text>
+    <text x="0" y="38" fill="#10b981" class="font-mono" font-size="11">10-line python script + TOON</text>
+
+    <!-- Bar Container -->
+    <rect x="250" y="5" width="580" height="36" rx="6" fill="#1e293b"/>
+    <rect x="250" y="5" width="18" height="36" rx="4" fill="url(#green-shield)"/>
+    <text x="280" y="28" fill="#34d399" class="font-mono" font-size="13" font-weight="700">312 Tokens Ingested (-98.3%)</text>
+
+    <!-- Stats Box -->
+    <g transform="translate(850, 4)">
+      <rect width="150" height="38" rx="6" fill="#052e16" stroke="#059669" stroke-width="1"/>
+      <text x="14" y="24" fill="#86efac" class="font-mono" font-size="12" font-weight="600">0.3s • $0.0006</text>
+    </g>
+  </g>
+
+  <!-- SAVINGS BADGE CARD -->
+  <g transform="translate(48, 260)">
+    <rect width="1004" height="66" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+    
+    <g transform="translate(24, 20)">
+      <circle cx="16" cy="14" r="16" fill="#10b981" fill-opacity="0.15"/>
+      <text x="11" y="20" fill="#10b981" class="font-mono" font-size="16" font-weight="700">🛡</text>
+    </g>
+
+    <g transform="translate(70, 26)">
+      <text x="0" y="0" fill="#f8fafc" class="font-sans" font-size="15" font-weight="700">TOKEN SHIELD ACTIVE: 98.3% Cost &amp; Context Reduction</text>
+      <text x="0" y="20" fill="#94a3b8" class="font-sans" font-size="12">
+        Never pipe uncompressed stdout. Use differential references, headless grep/filter scripts, and dense TOON notation.
+      </text>
+    </g>
+
+    <g transform="translate(860, 18)">
+      <rect width="120" height="30" rx="6" fill="#10b981"/>
+      <text x="16" y="20" fill="#06080d" class="font-mono" font-size="12" font-weight="800">58x SAVINGS</text>
+    </g>
+  </g>
+</svg>

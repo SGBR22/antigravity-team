@@ -1,0 +1,14 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Explicit shell script line endings (must be LF for Linux/macOS execution)
+*.sh text eol=lf
+
+# Windows specific scripts
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+
+# Vector graphics & configs
+*.svg text eol=lf
+*.json text eol=lf
+*.md text eol=lf
