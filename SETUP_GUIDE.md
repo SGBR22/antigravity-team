@@ -1,4 +1,4 @@
-# ⚡ Antigravity Multi-Agent Ecosystem Setup & Terminal Guide (v2.0.0)
+# ⚡ Antigravity Multi-Agent Ecosystem Setup & Terminal Guide (v2.9.0)
 
 <div align="center">
 
@@ -122,7 +122,7 @@ Test-Path "$HOME\.gemini\config\plugins\antigravity-team"
 Get-Content "$HOME\.gemini\antigravity\config.json"
 ```
 
-Restart your Google Antigravity application or terminal session. All 10 subagents and 15 skills are now immediately accessible.
+Restart your Google Antigravity application or terminal session. All 15 subagents and 16 skills are now immediately accessible.
 
 ---
 
@@ -134,17 +134,22 @@ You do not need to manually summon subagents. The orchestrator routes your inten
 User Request
      │
      ▼
-[system-architect] ──▶ Designs DAG, Data Contracts & DoD
+[system-architect] ──▶ Designs DAG, OpenSpec Specs, Contracts & DoD
      │
      ▼
 [coordinator]      ──▶ Concurrent Fan-Out (Speculative Pipelining)
      │
-     ├──▶ [senior-dev]       (Backend Code & TDD)
-     ├──▶ [visual-designer]  (Visuals, SVGs & UI)
-     ├──▶ [science-compute]  (COMSOL, FEMM, Metrology)
-     ├──▶ [cad-specialist]   (Blender bpy & 3D Print)
-     ├──▶ [typst-reporter]   (Publication PDF)
-     └──▶ [researcher]       (Empirical Research Loop)
+     ├──▶ [database-engineer] (DDL Schemas & Migrations)
+     ├──▶ [senior-dev]        (Backend Code & APIs)
+     ├──▶ [frontend-dev]      (Client Logic & UI State)
+     ├──▶ [test-engineer]     (TDD Red Suites & Mocks)
+     ├──▶ [visual-designer]   (Visuals, SVGs & UI Styling)
+     ├──▶ [sysadmin]          (Services, Ports & Docker)
+     ├──▶ [github-specialist] (GitHub Actions CI/CD & PRs)
+     ├──▶ [science-compute]   (COMSOL, FEMM, Metrology)
+     ├──▶ [cad-specialist]    (Blender bpy & 3D Print)
+     ├──▶ [typst-reporter]    (Publication PDF per GOST)
+     └──▶ [researcher]        (Empirical Research Loop)
      │
      ▼ Zero-Lag Join
 [code-reviewer]    ──▶ Adversarial QA & DoD Verification
@@ -155,15 +160,20 @@ Final User Deliverable
 
 ---
 
-## 👥 5. Subagents Reference (10 Roles)
+## 👥 5. Subagents Reference (15 Roles)
 
 | Subagent | Role | Primary Capabilities |
 | :--- | :--- | :--- |
 | **`coordinator`** | Central Dispatcher | Task DAG decomposition, multi-agent synchronization, zero-lag join. |
 | **`senior-dev`** | Systems Engineer | Python/TypeScript/Rust backends, CLI tools, Clean Code, automated TDD. |
-| **`code-reviewer`** | QA Gate & Verifier | 6-point code audit, memory leak checks, verification against DoD. |
+| **`frontend-dev`** | Frontend Engineer | Modern web UI (React, Vue), client state (Zustand/Query), Zod validation, API clients. |
+| **`test-engineer`** | Test Engineer | Automated test suites, TDD Red-phase test suites (Pytest/Vitest), fixtures, mocks. |
+| **`database-engineer`** | Database Engineer | DB schemas, zero-downtime migrations (Alembic/Prisma), query profiling (`EXPLAIN ANALYZE`). |
+| **`sysadmin`** | Systems Administrator | Windows (PowerShell/Services) & Linux (systemd/bash) administration, networking, Docker. |
+| **`github-specialist`** | GitHub Specialist | `gh` CLI automation, PR reviews, issues, releases, GitHub Actions CI/CD workflows. |
+| **`code-reviewer`** | QA Gate & Verifier | 6-point code audit, memory leak checks, verification against DoD and OpenSpec. |
 | **`researcher`** | Autonomous Researcher | Karpathy autoresearch loop, headless probe scripts, metric extraction. |
-| **`system-architect`** | Lead Architect | Everything Claude Code (ECC) architecture, modular contracts, ADRs. |
+| **`system-architect`** | Lead Architect | Everything Claude Code (ECC) architecture, OpenSpec proposals & specs, modular contracts, ADRs. |
 | **`science-compute`** | Math & Physics | High-voltage bushing simulations, COMSOL MPh, FEMM, GUM metrology. |
 | **`cad-specialist`** | CAD & 3D Specialist | Blender `bpy` scripting, Kompas-3D pywin32 (Win), FDM/SLA slicer checks. |
 | **`typst-reporter`** | Document Authority | Typst typesetting, GOST 7.32 papers, CeTZ vector graphics. |
@@ -172,23 +182,24 @@ Final User Deliverable
 
 ---
 
-## 🛠️ 6. Progressive Skills Reference (15 Skills)
+## 🛠️ 6. Progressive Skills Reference (16 Skills)
 
 1. **`autoresearch`**: Autonomous empirical loop (Hypothesis $\to$ Headless Probe $\to$ Metrics).
 2. **`system-architecture`**: Modular boundaries and ECC Architectural Decision Records (ADR).
-3. **`token-budget-optimizer`**: Active Token Shield and Karpathy "Think in Code" context governance.
-4. **`test-driven-development`**: Test-driven development lifecycle (Red-Green-Refactor).
-5. **`systematic-debugging`**: Scientific root-cause debugging with the Halt-at-2 rule.
-6. **`code-refactoring-and-architecture`**: Cognitive complexity reduction and dead-code elimination.
-7. **`craft-ui-engineering`**: Anti-AI modern design systems, fluid layouts, and zero-lag data contracts.
-8. **`git-workflow-and-commits`**: Conventional Commits 1.0 specification and atomic branch hygiene.
-9. **`hv-bushing-calc`**: Electrophysical calculation for bushings in COMSOL and FEMM.
-10. **`metrology-lab-data`**: Statistical experimental data processing per GOST 8.207.
-11. **`uncertainty-and-units`**: Physical unit tracking and GUM uncertainty propagation.
-12. **`kompas-3d-automation`**: Kompas-3D automation via pywin32 API 5/7 (Windows).
-13. **`blender-bpy-modeling`**: Headless procedural geometry scripting in Blender (`bpy`).
-14. **`three-d-printing-preflight`**: Mesh inspection and mechanical fit tolerances for 3D printing.
-15. **`typst-report`**: Formal report authoring in Typst with native CeTZ figures.
+3. **`openspec-sdd`**: Spec-Driven Development (SDD) lifecycle with proposals, delta-specs, and DoD gates.
+4. **`token-budget-optimizer`**: Active Token Shield and Karpathy "Think in Code" context governance.
+5. **`test-driven-development`**: Test-driven development lifecycle (Red-Green-Refactor).
+6. **`systematic-debugging`**: Scientific root-cause debugging with the Halt-at-2 rule.
+7. **`code-refactoring-and-architecture`**: Cognitive complexity reduction and dead-code elimination.
+8. **`craft-ui-engineering`**: Anti-AI modern design systems, fluid layouts, and zero-lag data contracts.
+9. **`git-workflow-and-commits`**: Conventional Commits 1.0 specification and atomic branch hygiene.
+10. **`hv-bushing-calc`**: Electrophysical calculation for bushings in COMSOL and FEMM.
+11. **`metrology-lab-data`**: Statistical experimental data processing per GOST 8.207.
+12. **`uncertainty-and-units`**: Physical unit tracking and GUM uncertainty propagation.
+13. **`kompas-3d-automation`**: Kompas-3D automation via pywin32 API 5/7 (Windows).
+14. **`blender-bpy-modeling`**: Headless procedural geometry scripting in Blender (`bpy`).
+15. **`three-d-printing-preflight`**: Mesh inspection and mechanical fit tolerances for 3D printing.
+16. **`typst-report`**: Formal report authoring in Typst with native CeTZ figures.
 
 ---
 

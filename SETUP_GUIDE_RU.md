@@ -1,4 +1,4 @@
-# ⚡ Руководство по установке и настройке Antigravity Multi-Agent Squad в терминале (v2.0.0)
+# ⚡ Руководство по установке и настройке Antigravity Multi-Agent Squad в терминале (v2.9.0)
 
 <div align="center">
 
@@ -122,7 +122,7 @@ Test-Path "$HOME\.gemini\config\plugins\antigravity-team"
 Get-Content "$HOME\.gemini\antigravity\config.json"
 ```
 
-Перезапустите приложение Google Antigravity или терминальную сессию. Все 10 субагентов и 15 скилов сразу готовы к работе.
+Перезапустите приложение Google Antigravity или терминальную сессию. Все 15 субагентов и 16 скилов сразу готовы к работе.
 
 ---
 
@@ -134,17 +134,22 @@ Get-Content "$HOME\.gemini\antigravity\config.json"
 Запрос пользователя
          │
          ▼
-[system-architect] ──▶ Проектирует DAG, контракты файлов и критерии DoD
+[system-architect] ──▶ Проектирует DAG, спецификации OpenSpec, контракты и критерии DoD
          │
          ▼
 [coordinator]      ──▶ Параллельный запуск потоков (Спекулятивный скелет)
          │
-         ├──▶ [senior-dev]       (Бэкенд, логика, CLI и TDD)
-         ├──▶ [visual-designer]  (Визуальный стиль, SVG, интерфейсы)
-         ├──▶ [science-compute]  (COMSOL, FEMM, расчет погрешностей)
-         ├──▶ [cad-specialist]   (Blender bpy, 3D-печать)
-         ├──▶ [typst-reporter]   (Публикационный PDF по ГОСТ)
-         └──▶ [researcher]       (Автономный исследовательский цикл)
+         ├──▶ [database-engineer] (Схемы БД и миграции)
+         ├──▶ [senior-dev]        (Бэкенд, логика, CLI и API)
+         ├──▶ [frontend-dev]      (Клиентская логика, Zustand, формы)
+         ├──▶ [test-engineer]     (TDD Red-тесты, фикстуры, моки)
+         ├──▶ [visual-designer]   (Визуальный стиль, SVG, интерфейсы)
+         ├──▶ [sysadmin]          (Службы, порты, Docker, процессы)
+         ├──▶ [github-specialist] (GitHub Actions CI/CD, PRs, релизы)
+         ├──▶ [science-compute]   (COMSOL, FEMM, расчет погрешностей)
+         ├──▶ [cad-specialist]    (Blender bpy, 3D-печать)
+         ├──▶ [typst-reporter]    (Публикационный PDF по ГОСТ)
+         └──▶ [researcher]        (Автономный исследовательский цикл)
          │
          ▼ Zero-Lag Join (Мгновенное сведение)
 [code-reviewer]    ──▶ Противнический QA-аудит и верификация DoD
@@ -155,15 +160,20 @@ Get-Content "$HOME\.gemini\antigravity\config.json"
 
 ---
 
-## 👥 5. Справочник субагентов (10 ролей)
+## 👥 5. Справочник субагентов (15 ролей)
 
 | Субагент | Роль | Основная специализация |
 | :--- | :--- | :--- |
 | **`coordinator`** | Главный диспетчер | Декомпозиция задач, параллельные потоки, сборка финального результата. |
 | **`senior-dev`** | Системный разработчик | Серверная логика, CLI-утилиты, TDD, Clean Code без лишней бюрократии. |
-| **`code-reviewer`** | QA-аудитор и контролер плана | Проверка каждого пункта плана, анализ утечек памяти и граничных условий. |
+| **`frontend-dev`** | Фронтенд-инженер | Клиентская логика, современные веб-интерфейсы (React, Vue), стейт Zustand/Query, формы Zod. |
+| **`test-engineer`** | Инженер тестирования | Автоматизированные тесты, TDD Red-фаза (Pytest/Vitest), моки, краевые случаи. |
+| **`database-engineer`** | Инженер баз данных | Схемы данных, безопасные миграции (Alembic/Prisma), оптимизация `EXPLAIN ANALYZE`. |
+| **`sysadmin`** | Системный администратор | Windows (PowerShell/Services) и Linux (systemd/bash), Docker, сети, порты. |
+| **`github-specialist`** | Специалист GitHub | Управление через `gh` CLI, PR, Issues, релизы, CI/CD воркфлоу GitHub Actions. |
+| **`code-reviewer`** | QA-аудитор и контролер плана | Проверка каждого пункта плана, анализ утечек ресурсов, соответствие OpenSpec DoD. |
 | **`researcher`** | Автономный исследователь | Эмпирический цикл Карпатого: гипотеза $\to$ скрипт-зонд $\to$ факты и метрики. |
-| **`system-architect`** | Главный архитектор | Модульная архитектура ECC, файловые контракты и архитектурные решения (ADR). |
+| **`system-architect`** | Главный архитектор | Модульная архитектура ECC, OpenSpec proposal/specs, контракты взаимодействия и ADR. |
 | **`science-compute`** | Инженер-расчетчик | Электрофизика, высоковольтные вводы, COMSOL MPh, FEMM, ГОСТ 8.207. |
 | **`cad-specialist`** | САПР и 3D-моделирование | Скрипты Blender `bpy`, Компас-3D (pywin32 под Win), проверка для 3D-печати. |
 | **`typst-reporter`** | Мастер документации | Генерация отчетов в Typst по ГОСТ 7.32, векторные схемы CeTZ. |
@@ -172,23 +182,24 @@ Get-Content "$HOME\.gemini\antigravity\config.json"
 
 ---
 
-## 🛠️ 6. Справочник навыков (15 скилов)
+## 🛠️ 6. Справочник навыков (16 скилов)
 
 1. **`autoresearch`**: Автономный исследовательский цикл (Гипотеза $\to$ Зонд $\to$ Метрики).
 2. **`system-architecture`**: Модульная архитектура ECC и документация решений (ADR).
-3. **`token-budget-optimizer`**: Активный щит токенов и принцип Карпатого "Think in Code".
-4. **`test-driven-development`**: Разработка через тестирование (TDD: Red-Green-Refactor).
-5. **`systematic-debugging`**: Научная локализация ошибок с правилом «Стоп на 2».
-6. **`code-refactoring-and-architecture`**: Снижение когнитивной сложности и удаление мертвого кода.
-7. **`craft-ui-engineering`**: Современный веб-дизайн без AI-шаблонов и пайплайны нулевой задержки.
-8. **`git-workflow-and-commits`**: Стандарт Conventional Commits 1.0 и гигиена репозитория.
-9. **`hv-bushing-calc`**: Расчет высоковольтных вводов в COMSOL и FEMM.
-10. **`metrology-lab-data`**: Обработка лабораторных данных по ГОСТ 8.207 (Стьюдент, МНК).
-11. **`uncertainty-and-units`**: Физические размерности (`pint`) и расчет неопределенностей (GUM).
-12. **`kompas-3d-automation`**: Автоматизация чертежей Компас-3D через pywin32 API 5/7 (Windows).
-13. **`blender-bpy-modeling`**: Процедурное 3D-моделирование через скрипты Blender `bpy`.
-14. **`three-d-printing-preflight`**: Проверка 3D-моделей перед печатью (FDM/SLA).
-15. **`typst-report`**: Оформление отчетов в Typst с векторной графикой CeTZ.
+3. **`openspec-sdd`**: Жизненный цикл разработки на спецификациях (OpenSpec SDD, proposals, delta-specs, DoD).
+4. **`token-budget-optimizer`**: Активный щит токенов и принцип Карпатого "Think in Code".
+5. **`test-driven-development`**: Разработка через тестирование (TDD: Red-Green-Refactor).
+6. **`systematic-debugging`**: Научная локализация ошибок с правилом «Стоп на 2».
+7. **`code-refactoring-and-architecture`**: Снижение когнитивной сложности и удаление мертвого кода.
+8. **`craft-ui-engineering`**: Современный веб-дизайн без AI-шаблонов и пайплайны нулевой задержки.
+9. **`git-workflow-and-commits`**: Стандарт Conventional Commits 1.0 и гигиена репозитория.
+10. **`hv-bushing-calc`**: Расчет высоковольтных вводов в COMSOL и FEMM.
+11. **`metrology-lab-data`**: Обработка лабораторных данных по ГОСТ 8.207 (Стьюдент, МНК).
+12. **`uncertainty-and-units`**: Физические размерности (`pint`) и расчет неопределенностей (GUM).
+13. **`kompas-3d-automation`**: Автоматизация чертежей Компас-3D через pywin32 API 5/7 (Windows).
+14. **`blender-bpy-modeling`**: Процедурное 3D-моделирование через скрипты Blender `bpy`.
+15. **`three-d-printing-preflight`**: Проверка 3D-моделей перед печатью (FDM/SLA).
+16. **`typst-report`**: Оформление отчетов в Typst с векторной графикой CeTZ.
 
 ---
 

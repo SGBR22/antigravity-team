@@ -10,7 +10,7 @@
 $ErrorActionPreference = "Stop"
 
 Write-Host "=================================================================" -ForegroundColor Cyan
-Write-Host "  Установка Antigravity Multi-Agent Team (v2.0.0)               " -ForegroundColor Cyan
+Write-Host "  Установка Antigravity Multi-Agent Team (v2.9.0)               " -ForegroundColor Cyan
 Write-Host "=================================================================" -ForegroundColor Cyan
 
 # 1. Определение путей
@@ -112,5 +112,5 @@ if ($pythonInstalled) {
 Write-Host "`n=================================================================" -ForegroundColor Green
 Write-Host "   ПОЗДРАВЛЯЕМ! Мультиагентная команда успешно установлена!      " -ForegroundColor Green
 Write-Host "=================================================================" -ForegroundColor Green
-Write-Host "Все 10 агентов и 15 скилов (Auto-Dispatch) готовы к работе во всех проектах." -ForegroundColor Cyan
+Write-Host "Все 15 агентов и 16 скилов (Auto-Dispatch, OpenSpec SDD) готовы к работе во всех проектах." -ForegroundColor Cyan
 Write-Host "Перезапустите Google Antigravity для применения изменений." -ForegroundColor Yellow

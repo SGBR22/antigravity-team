@@ -2,20 +2,20 @@
 
 ![Баннер мультиагентной команды Antigravity](assets/hero-banner.svg)
 
-[![Релиз](https://img.shields.io/badge/Релиз-v2.0.0_Terminal-10b981?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/SGBR22/antigravity-team)
+[![Релиз](https://img.shields.io/badge/Релиз-v2.9.0_Terminal-10b981?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/SGBR22/antigravity-team)
 [![Платформы](https://img.shields.io/badge/Платформы-Linux_Терминал_•_Windows_PS-6366f1?style=for-the-badge&logo=linux&logoColor=white)](SETUP_GUIDE_RU.md)
 [![Лицензия](https://img.shields.io/badge/Лицензия-MIT-blue?style=for-the-badge)](LICENSE)
 
 [![English](https://img.shields.io/badge/Language-English-blue?style=flat-square)](README.md)
 [![Русский](https://img.shields.io/badge/Язык-Русский-red?style=flat-square)](README_RU.md)
-[![Архитектура](https://img.shields.io/badge/Архитектура-10_Агентов_%7C_15_Скилов-8A2BE2?style=flat-square)](https://github.com/SGBR22/antigravity-team)
-[![Парадигмы](https://img.shields.io/badge/Парадигмы-Карпатый_•_ECC_•_Craft_UI-FF007F?style=flat-square)](https://github.com/SGBR22/antigravity-team)
+[![Архитектура](https://img.shields.io/badge/Архитектура-15_Агентов_%7C_16_Скилов-8A2BE2?style=flat-square)](https://github.com/SGBR22/antigravity-team)
+[![Парадигмы](https://img.shields.io/badge/Парадигмы-Карпатый_•_OpenSpec_•_Craft_UI-FF007F?style=flat-square)](https://github.com/SGBR22/antigravity-team)
 [![Экономия токенов](https://img.shields.io/badge/Token_Shield-Think_in_Code_(-98.3%25)-FF6D00?style=flat-square)](https://github.com/SGBR22/antigravity-team)
 [![Консенсус разработки](https://img.shields.io/badge/Dev_Loop-TDD_%2B_QA_Контроль-00C853?style=flat-square)](https://github.com/SGBR22/antigravity-team)
 
 **[Русский](README_RU.md)** • **[English](README.md)** • **[Инструкция по установке](SETUP_GUIDE_RU.md)** • **[Как передать архив другу](КАК_ПЕРЕДАТЬ_ДРУГУ.md)**
 
-[⚡ Быстрый старт](#-быстрый-старт) • [🧭 Архитектура и Auto-Dispatch](#-архитектура-и-автодиспетчеризация-auto-dispatch) • [⚡ Параллельный конвейер](#-параллельный-конвейер-спекулятивных-скелетов) • [👥 Парный консенсус разработки](#-парный-консенсус-разработки-multi-dev-loop) • [🛡️ Щит токенов (Token Shield)](#-%D1%89%D0%B8%D1%82-%D1%82%D0%BE%D0%BA%D0%B5%D0%BD%D0%BE%D0%B2-active-token-shield) • [🐧 Кросс-платформенная матрица](#-%D0%BA%D1%80%D0%BE%D1%81%D1%81-%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0) • [👥 Состав субагентов](#-%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2-%D1%81%D1%83%D0%B1%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-10-%D1%80%D0%BE%D0%BB%D0%B5%D0%B9) • [🛠️ Каталог навыков](#%EF%B8%8F-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BD%D0%B0%D0%B2%D1%8B%D0%BA%D0%B8-15-%D1%81%D0%BA%D0%B8%D0%BB%D0%BE%D0%B2)
+[⚡ Быстрый старт](#-быстрый-старт) • [🧭 Архитектура и Auto-Dispatch](#-архитектура-и-автодиспетчеризация-auto-dispatch) • [⚡ Параллельный конвейер](#-параллельный-конвейер-спекулятивных-скелетов) • [👥 Парный консенсус разработки](#-парный-консенсус-разработки-multi-dev-loop) • [🛡️ Щит токенов (Token Shield)](#-%D1%89%D0%B8%D1%82-%D1%82%D0%BE%D0%BA%D0%B5%D0%BD%D0%BE%D0%B2-active-token-shield) • [🐧 Кросс-платформенная матрица](#-%D0%BA%D1%80%D0%BE%D1%81%D1%81-%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0) • [👥 Состав субагентов](#-%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2-%D1%81%D1%83%D0%B1%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-15-%D1%80%D0%BE%D0%BB%D0%B5%D0%B9) • [🛠️ Каталог навыков](#%EF%B8%8F-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BD%D0%B0%D0%B2%D1%8B%D0%BA%D0%B8-16-%D1%81%D0%BA%D0%B8%D0%BB%D0%BE%D0%B2)
 
 </div>
 
@@ -58,7 +58,7 @@ irm https://raw.githubusercontent.com/SGBR22/antigravity-team/main/install.ps1 |
 
 ## 🧭 Архитектура и Автодиспетчеризация (Auto-Dispatch)
 
-Вся работа в экосистеме строится на 4-уровневом строгом разделении обязанностей: **Планировщик** (`system-architect`) $\to$ **Диспетчер** (`coordinator`) $\to$ **Исполнительные потоки** $\to$ **Верификатор качества** (`code-reviewer`).
+Вся работа в экосистеме строится на строгом разделении обязанностей: **Планировщик** (`system-architect`) $\to$ **Диспетчер** (`coordinator`) $\to$ **Исполнительные потоки** $\to$ **Верификатор качества** (`code-reviewer`).
 
 <div align="center">
 
@@ -72,16 +72,21 @@ irm https://raw.githubusercontent.com/SGBR22/antigravity-team/main/install.ps1 |
 
 | Предметная область и триггеры | Вызываемый субагент | Роль модели | Строгие границы ответственности |
 | :--- | :--- | :--- | :--- |
-| **Планирование, граф DAG, контракты, ADR** | 🏛️ `system-architect` | `inherit` | **Главный архитектор**: декомпозиция задач, определение контрактов файлов данных (`results.json`, `ui_data.json`) и критериев приемки (DoD). |
+| **Планирование, граф DAG, контракты, ADR, OpenSpec** | 🏛️ `system-architect` | `inherit` | **Главный архитектор**: декомпозиция задач, определение контрактов файлов (`results.json`, `ui_data.json`), OpenSpec proposal/specs и критериев приемки (DoD). |
 | **Диспетчеризация, параллельные потоки, пайплайн** | 🎯 `coordinator` | `inherit` | **Диспетчер исполнения**: параллельный запуск потоков, сведение по Zero-Lag Join. *Запрещено писать код, верстать отчеты и дизайн!* |
-| **Бэкенд-код, алгоритмы, скрипты, CLI, TDD** | ⚡ `senior-dev` | `inherit` | **Системный инженер**: лаконичный, надежный код на Python/TypeScript/Go/Rust. *Запрещено писать UI/HTML/CSS/дизайн!* |
+| **Бэкенд-код, алгоритмы, скрипты, CLI, системная логика** | ⚡ `senior-dev` | `inherit` | **Системный инженер**: лаконичный, надежный код на Python/TypeScript/Go/Rust. *Запрещено писать UI/HTML/CSS/дизайн!* |
+| **Клиентская веб-логика, React, Vue, стейт, хуки, API** | 💻 `frontend-dev` | `inherit` | **Фронтенд-инженер**: клиентская логика, Zustand/Query, валидация Zod, типизированная интеграция API. |
+| **TDD-тесты, падающие тесты, автотесты, Pytest, Vitest** | 🧪 `test-engineer` | `inherit` | **Инженер тестирования**: разработка автоматизированных тестов, фикстур, моков, проверка краевых случаев до и во время кодинга. |
+| **Базы данных, SQL, схемы, миграции, индексы, ORM** | 🗄️ `database-engineer` | `inherit` | **Инженер баз данных**: реляционные/NoSQL схемы, безопасные миграции (Alembic/Prisma), оптимизация EXPLAIN ANALYZE. |
+| **Windows/Linux администрирование, PowerShell, Docker** | 🖥️ `sysadmin` | `inherit` | **Системный администратор**: службы systemd/Windows, процессы, порты, Docker-контейнеры, сети, права доступа. |
+| **GitHub CLI, Pull Requests, Issues, Actions CI/CD** | 🐙 `github-specialist` | `inherit` | **Специалист GitHub**: управление экосистемой GitHub, `gh` CLI, PR, Issues, релизы, воркфлоу CI/CD Actions, секреты. |
 | **Визуальный дизайн, UI/UX, оформление, SVG** | 🎨 `visual-designer` | `inherit` | **Единый центр дизайна**: современная адаптивная эстетика без AI-клише (Craft UI, Tailwind, векторные SVG-схемы, инфографика). |
 | **Отчеты по ГОСТ 7.32, пояснительные записки** | 📄 `typst-reporter` | `inherit` | **Единый центр документации**: верстка публикационных PDF в Typst со векторными схемами CeTZ на основе внешнего `results.json`. |
 | **Электрофизика, COMSOL MPh, FEMM, погрешности** | 🧮 `science-compute` | `inherit` | Моделирование полей, расчет высоковольтных вводов, мат. обработка по ГОСТ 8.207 и перенос неопределенностей (GUM). |
 | **САПР, Blender bpy, 3D-печать (FDM/SLA)** | 📐 `cad-specialist` | `inherit` | Процедурное 3D-моделирование в Blender `bpy`, автоматизация Компас-3D (pywin32 под Windows), проверка допусков для печати. |
 | **Автономные исследования, бенчмарки** | 🔬 `researcher` | `inherit` | Исследовательский цикл Karpathy & Hermes: гипотеза $\to$ скрипт-зонд $\to$ извлечение числовых метрик без засорения контекста. |
 | **Поиск в сети, стандарты ГОСТ/IEC, актуальные API** | 🌐 `web-surfer` | `inherit` | Целевой сбор спецификаций и технической документации без лишнего текста. |
-| **Аудит кода, безопасность, ревью diff, верификатор DoD** | 🛡️ `code-reviewer` | `inherit` | **Контролер плана и QA-аудитор**: 6-точечный аудит (утечки ресурсов, краевые баги, соответствие каждому пункту плана). |
+| **Аудит кода, безопасность, ревью diff, верификатор DoD** | 🛡️ `code-reviewer` | `inherit` | **Контролер плана и QA-аудитор**: 6-точечный аудит (утечки ресурсов, краевые баги, соответствие каждому пункту плана и OpenSpec DoD). |
 
 ---
 
@@ -153,7 +158,7 @@ irm https://raw.githubusercontent.com/SGBR22/antigravity-team/main/install.ps1 |
 
 | Возможность | Linux Терминал (CLI / Headless) | Windows (PowerShell / GUI) |
 | :--- | :---: | :---: |
-| **Все 10 субагентов** | ✅ 100% паритет | ✅ 100% паритет |
+| **Все 15 субагентов** | ✅ 100% паритет | ✅ 100% паритет |
 | **Автодиспетчеризация** | ✅ 100% паритет | ✅ 100% паритет |
 | **Спекулятивный конвейер** | ✅ 100% паритет | ✅ 100% паритет |
 | **TDD и Clean Code** | ✅ 100% паритет | ✅ 100% паритет |
@@ -166,7 +171,7 @@ irm https://raw.githubusercontent.com/SGBR22/antigravity-team/main/install.ps1 |
 
 ---
 
-## 👥 Состав субагентов (10 ролей)
+## 👥 Состав субагентов (15 ролей)
 
 <details>
 <summary><b>Развернуть детальное описание субагентов</b></summary>
@@ -175,29 +180,43 @@ irm https://raw.githubusercontent.com/SGBR22/antigravity-team/main/install.ps1 |
    - Декомпозиция сложных запросов пользователя на независимые рабочие пакеты.
    - Синхронизация параллельных потоков и сведение итоговых артефактов.
 2. **`senior-dev`** — *Ведущий бэкенд и системный разработчик*
-   - Серверная логика, CLI-утилиты, чистая архитектура, разработка по TDD.
-3. **`code-reviewer`** — *Противнический QA-аудитор и верификатор плана*
-   - Независимая проверка выполнения каждого критерия готовности (DoD), поиск утечек памяти и краевых ошибок.
-4. **`researcher`** — *Специалист автономных эмпирических исследований*
+   - Серверная логика, CLI-утилиты, чистая архитектура, разработка по TDD на Python, TypeScript, Go, Rust.
+3. **`frontend-dev`** — *Фронтенд-инженер и веб-разработчик*
+   - Клиентская логика, современные веб-интерфейсы (React, Next.js, Vue), стейт-менеджмент (Zustand, Query), валидация форм (Zod) и типизированные API-клиенты.
+4. **`test-engineer`** — *Инженер автоматизированного тестирования (QA & TDD)*
+   - Разработка тестовых наборов, фикстур, моков и параметризованных проверок (Pytest, Vitest).
+   - Формирование падающих тестов (Red phase) по сценариям OpenSpec до написания кода.
+5. **`database-engineer`** — *Инженер баз данных и миграций*
+   - Проектирование реляционных и NoSQL схем данных, безопасные миграции без простоя (Alembic, Prisma).
+   - Профилирование производительности и оптимизация запросов (`EXPLAIN ANALYZE`), индексы.
+6. **`sysadmin`** — *Системный администратор и DevOps-инженер*
+   - Кросс-платформенное администрирование Windows и Linux: службы systemd, Windows Services, процессы, порты.
+   - Автоматизация PowerShell/Bash, управление сетями и жизненным циклом контейнеров Docker.
+7. **`github-specialist`** — *Специалист по GitHub и CI/CD автоматизации*
+   - Автоматизация GitHub CLI (`gh`), оформление PR, рецензирование diff, ведение Issues, релизов и тегов.
+   - Разработка и отладка пайплайнов GitHub Actions (`.github/workflows/*.yml`), секреты и правила веток.
+8. **`code-reviewer`** — *Противнический QA-аудитор и верификатор плана*
+   - Независимая проверка выполнения каждого критерия готовности (DoD) и сценариев OpenSpec, поиск утечек памяти и краевых ошибок.
+9. **`researcher`** — *Специалист автономных эмпирических исследований*
    - Циклы Karpathy Autoresearch и NousResearch Hermes: формулирование гипотезы, запуск скрипта-зонда, фактологический отчет.
-5. **`system-architect`** — *Главный системный архитектор*
-   - Модульное проектирование по стандартам Everything Claude Code (ECC), контракты взаимодействия и архитектурные решения (ADR).
-6. **`science-compute`** — *Инженер-расчетчик и физико-математическое моделирование*
-   - Расчет высоковольтных вводов, COMSOL Multiphysics через `MPh`, электростатика FEMM, метрологический анализ погрешностей по ГОСТ 8.207.
-7. **`cad-specialist`** — *Специалист САПР, Blender и 3D-печати*
-   - Автоматизация Компас-3D через pywin32 (штампы по ГОСТ 2.104), процедурное 3D в Blender `bpy`, допуски и посадки для слайсеров 3D-печати.
-8. **`typst-reporter`** — *Единый центр отчетов и технической документации*
-   - Верстка отчетов в Typst по ГОСТ 7.32 (`modern-g7-32`), векторная графика CeTZ, автоматическая подгрузка данных из JSON.
-9. **`visual-designer`** — *Центр визуального оформления, UI/UX и инфографики*
-   - Современная адаптивная эстетика (Craft UI), векторные схемы SVG, интерфейсные компоненты, витрины проектов.
-10. **`web-surfer`** — *Целевой веб-навигатор и исследователь стандартов*
+10. **`system-architect`** — *Главный системный архитектор*
+    - Модульное проектирование по стандартам Everything Claude Code (ECC), спецификации OpenSpec (proposals, delta-specs), контракты взаимодействия и архитектурные решения (ADR).
+11. **`science-compute`** — *Инженер-расчетчик и физико-математическое моделирование*
+    - Расчет высоковольтных вводов, COMSOL Multiphysics через `MPh`, электростатика FEMM, метрологический анализ погрешностей по ГОСТ 8.207.
+12. **`cad-specialist`** — *Специалист САПР, Blender и 3D-печати*
+    - Автоматизация Компас-3D через pywin32 (штампы по ГОСТ 2.104), процедурное 3D в Blender `bpy`, допуски и посадки для слайсеров 3D-печати.
+13. **`typst-reporter`** — *Единый центр отчетов и технической документации*
+    - Верстка отчетов в Typst по ГОСТ 7.32 (`modern-g7-32`), векторная графика CeTZ, автоматическая подгрузка данных из JSON.
+14. **`visual-designer`** — *Центр визуального оформления, UI/UX и инфографики*
+    - Современная адаптивная эстетика (Craft UI), векторные схемы SVG, интерфейсные компоненты, витрины проектов.
+15. **`web-surfer`** — *Целевой веб-навигатор и исследователь стандартов*
     - Точечный поиск актуальных стандартов ГОСТ/IEC, документации библиотек и схем API.
 
 </details>
 
 ---
 
-## 🛠️ Прогрессивные навыки (15 скилов)
+## 🛠️ Прогрессивные навыки (16 скилов)
 
 <details open>
 <summary><b>Каталог встроенных модулей навыков</b></summary>
@@ -206,6 +225,7 @@ irm https://raw.githubusercontent.com/SGBR22/antigravity-team/main/install.ps1 |
 | :--- | :--- | :--- |
 | **`autoresearch`** | Автономный исследовательский цикл | Гипотеза $\to$ Скрипт-зонд $\to$ Метрики |
 | **`system-architecture`** | Модульная архитектура и ADR | Стандарт ECC, файловые контракты, DoD |
+| **`openspec-sdd`** | Жизненный цикл разработки на спецификациях (SDD) | Фреймворк Fission-AI/OpenSpec, Proposals, Delta-Specs, DoD |
 | **`token-budget-optimizer`** | Экономика контекста "Think in Code" | Однострочные зонды, формат TOON |
 | **`test-driven-development`** | Разработка через падающие тесты (TDD) | Red-Green-Refactor, `pytest`, `cargo test` |
 | **`systematic-debugging`** | Научная отладка без хаотичных правок | Правило «Стоп на 2», минимальный воспроизводимый пример |
@@ -229,17 +249,17 @@ irm https://raw.githubusercontent.com/SGBR22/antigravity-team/main/install.ps1 |
 ```text
 antigravity-team/
 ├── assets/                          # Векторные SVG-диаграммы и схемы высокого разрешения
-│   ├── hero-banner.svg              # Футуристичный баннер экосистемы (v2.0.0)
+│   ├── hero-banner.svg              # Футуристичный баннер экосистемы (v2.9.0)
 │   ├── architecture-dispatch.svg    # Схема автодиспетчеризации и топологии агентов
 │   ├── speculative-pipelining.svg   # Сравнение параллельного конвейера с последовательным
 │   ├── multi-dev-loop.svg           # Цикл парного консенсуса разработки и TDD
 │   ├── token-shield.svg             # График бенчмарка экономии токенов (Active Token Shield)
 │   └── cross-platform-matrix.svg    # Матрица кросс-платформенного паритета Linux и Windows
 ├── antigravity-team/                # Каталог подключаемого плагина Antigravity
-│   ├── plugin.json                  # Манифест экосистемы и подсказки (v2.0.0)
-│   ├── agents/                      # Манифесты инструкций 10 субагентов
+│   ├── plugin.json                  # Манифест экосистемы и подсказки (v2.9.0)
+│   ├── agents/                      # Манифесты инструкций 15 субагентов
 │   ├── rules/AGENTS.md              # Правила управления и протокол Auto-Dispatch
-│   └── skills/                      # 15 каталогов специализированных навыков (SKILL.md)
+│   └── skills/                      # 16 каталогов специализированных навыков (SKILL.md)
 ├── install.sh                       # Удаленный bash-инсталлятор для Linux / macOS
 ├── install-team.sh                  # Локальный терминальный инсталлятор для Linux / macOS
 ├── export-team.sh                   # Пакетный сборщик архива для Linux / macOS
