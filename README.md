@@ -1,8 +1,20 @@
-<div align="center">
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-banner.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/hero-banner-light.svg">
+    <img alt="Antigravity Multi-Agent Squad Banner" src="assets/hero-banner.svg" width="100%">
+  </picture>
+</p>
 
-![Antigravity Multi-Agent Squad Banner](assets/hero-banner.svg)
+<p align="center">
+  <img src="assets/badges/badge-status-live.svg" alt="Status Live" height="26" />
+  <img src="assets/badges/badge-cluster-deterministic.svg" alt="Deterministic Tier" height="26" />
+  <img src="assets/badges/badge-cluster-balanced.svg" alt="Balanced Tier" height="26" />
+  <img src="assets/badges/badge-cluster-creative.svg" alt="Creative Tier" height="26" />
+  <img src="assets/badges/badge-token-shield.svg" alt="Active Token Shield" height="26" />
+</p>
 
-[![Release](https://img.shields.io/badge/Release-v2.9.0_Terminal-10b981?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/SGBR22/antigravity-team)
+[![Release](https://img.shields.io/badge/Release-v3.0.0_Cognitive_Profiles-10b981?style=for-the-badge&logo=rocket&logoColor=white)](https://github.com/SGBR22/antigravity-team)
 [![Platform](https://img.shields.io/badge/Platform-Linux_Terminal_•_Windows_PS-6366f1?style=for-the-badge&logo=linux&logoColor=white)](SETUP_GUIDE.md)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 

@@ -126,3 +126,18 @@ These rules govern all agent behaviors, subagent executions, and multi-agent han
 
 5. **Anti-Loop Circuit Breaker ("Стоп на 2")**:
    - При повторе ошибки 2 раза подряд немедленно остановитесь, сформулируйте причину и смените тактику.
+
+---
+
+## 7. 🌡️ Temperature & Cognitive Invariants Protocol (Калибровка энтропии и тиров)
+
+Все 15 агентов экосистемы работают в рамках строгой калибровки температуры $T$, тира модели и предзагруженных навыков (`preloadSkills`):
+
+| Когнитивный кластер | Температура $T$ | Тир модели | Агенты (`invoke_subagent`) | Поведенческие инварианты |
+| :--- | :---: | :---: | :--- | :--- |
+| **Детерминированный (Deterministic)** | `0.0 - 0.1` | `pro` / `flash` | 🛡️ `code-reviewer` (`pro`)<br>🗄️ `database-engineer` (`pro`)<br>🧮 `science-compute` (`pro`)<br>🖥️ `sysadmin` (`pro`)<br>🧪 `test-engineer` (`flash`)<br>📐 `cad-specialist` (`flash`) | **Argmax-строгость, нулевая фантазия**: исключены спекуляции, галлюцинации и допуски. Любые формулы, DDL, SQL, системные команды и геометрия обязаны быть верифицированы headlessly. |
+| **Сбалансированный (Balanced / Engineering)** | `0.3 - 0.4` | `pro` / `flash` | ⚡ `senior-dev` (`pro`)<br>🏛️ `system-architect` (`pro`)<br>🎯 `coordinator` (`flash`)<br>💻 `frontend-dev` (`flash`)<br>🐙 `github-specialist` (`flash`)<br>📄 `typst-reporter` (`flash`) | **Прагматичный продакшн**: идиоматический чистый код, проверенные паттерны, TDD (Red-Green-Refactor), отсутствие оверинжиниринга, строгие контракты обмена. |
+| **Креативный (Creative / Exploratory)** | `0.7 - 0.85` | `pro` / `flash` | 🔬 `researcher` (`pro`)<br>🎨 `visual-designer` (`flash`)<br>🌐 `web-surfer` (`flash`) | **Дивергентное мышление**: генерация нескольких альтернативных гипотез или дизайн-направлений, уход от клише, Anti-AI Craft эстетика, вариативный веб-поиск. |
+
+> **Правило Оркестратора:**
+> При вызове агентов через `invoke_subagent` координатор учитывает назначенные тиры моделей (`pro` для архитектуры, аудита, бэкенда, БД, физики и сисадмина; `flash` для быстрых реактивных потоков). Все агенты автоматически несут в себе `token-budget-optimizer` и целевые предметные скилы.

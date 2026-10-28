@@ -1,103 +1,142 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" width="1100" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 390" width="1100" height="390">
   <defs>
-    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06080d"/>
-      <stop offset="50%" stop-color="#0b0f19"/>
-      <stop offset="100%" stop-color="#0a0d17"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07090e"/>
+      <stop offset="100%" stop-color="#0c1017"/>
     </linearGradient>
-    <linearGradient id="green-bar" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#059669"/>
-      <stop offset="100%" stop-color="#10b981"/>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#334155" fill-opacity="0.2"/>
+    </pattern>
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
     </linearGradient>
-    <linearGradient id="cyan-bar" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0284c7"/>
-      <stop offset="100%" stop-color="#06b6d4"/>
-    </linearGradient>
-    <linearGradient id="pink-bar" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#db2777"/>
-      <stop offset="100%" stop-color="#ec4899"/>
+    <linearGradient id="accent-emerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
     </linearGradient>
   </defs>
 
   <style>
-    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-    .font-mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'Geist Mono', ui-monospace, Menlo, monospace; }
+    
+    @keyframes pulseBeam {
+      0% { stroke-dashoffset: 160; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes blinkLed {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    .pulse-beam { stroke-dasharray: 20 60; animation: pulseBeam 2.5s linear infinite; }
+    .blink-led { animation: blinkLed 1.8s ease-in-out infinite; }
   </style>
 
-  <!-- Background -->
-  <rect width="1100" height="400" rx="14" fill="url(#bg3)"/>
-  <rect x="0.5" y="0.5" width="1099" height="399" rx="13.5" fill="none" stroke="#1e293b" stroke-width="1"/>
+  <rect width="1100" height="390" rx="12" fill="url(#bg)"/>
+  <rect width="1100" height="390" rx="12" fill="url(#grid)"/>
+  <rect x="0.5" y="0.5" width="1099" height="389" rx="11.5" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
 
   <!-- Header -->
-  <g transform="translate(48, 38)">
-    <text x="0" y="0" fill="#f8fafc" class="font-sans" font-size="20" font-weight="700">SPECULATIVE SKELETON PIPELINING</text>
-    <text x="0" y="22" fill="#94a3b8" class="font-sans" font-size="13">Zero-Lag Concurrent Fan-out vs Traditional Blocking Pipeline • 50% Latency Elimination</text>
+  <g transform="translate(40, 36)">
+    <text x="0" y="0" fill="#f1f5f9" class="font-mono" font-size="14" font-weight="700" letter-spacing="1">PARADIGM COMPARISON: LATENCY &amp; IDLE TIME REDUCTION</text>
+    <text x="0" y="20" fill="#64748b" class="font-sans" font-size="12">How Speculative Skeleton Pipelining eliminates blocked agent idle states</text>
   </g>
 
-  <!-- Time Axis Marks -->
-  <g transform="translate(240, 80)">
-    <text x="0" y="0" fill="#64748b" class="font-mono" font-size="11">0.0s</text>
-    <text x="180" y="0" fill="#64748b" class="font-mono" font-size="11">0.4s</text>
-    <text x="360" y="0" fill="#64748b" class="font-mono" font-size="11">0.8s (Spec Join)</text>
-    <text x="540" y="0" fill="#64748b" class="font-mono" font-size="11">1.2s</text>
-    <text x="720" y="0" fill="#64748b" class="font-mono" font-size="11">1.6s</text>
+  <!-- ================= SECTION 1: TRADITIONAL SEQUENTIAL ================= -->
+  <g transform="translate(40, 84)">
+    <rect x="0" y="0" width="1020" height="110" rx="8" fill="#0f172a" fill-opacity="0.6" stroke="rgba(239, 68, 68, 0.25)" stroke-width="1"/>
     
-    <!-- Vertical Grid Guidelines -->
-    <line x1="0" y1="10" x2="0" y2="250" stroke="#1e293b" stroke-width="1" stroke-dasharray="2 4"/>
-    <line x1="180" y1="10" x2="180" y2="250" stroke="#1e293b" stroke-width="1" stroke-dasharray="2 4"/>
-    <line x1="360" y1="10" x2="360" y2="250" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4 4"/>
-    <line x1="540" y1="10" x2="540" y2="250" stroke="#1e293b" stroke-width="1" stroke-dasharray="2 4"/>
-    <line x1="720" y1="10" x2="720" y2="250" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4 4"/>
-  </g>
+    <!-- Title -->
+    <circle cx="20" cy="22" r="4" fill="#ef4444"/>
+    <text x="32" y="26" fill="#f87171" class="font-mono" font-size="11" font-weight="700">TRADITIONAL MONOLITHIC FLOW (BLOCKED SEQUENTIAL)</text>
+    <text x="830" y="26" fill="#ef4444" class="font-mono" font-size="11" font-weight="700">TOTAL: ~4.5x LATENCY</text>
 
-  <!-- SECTION 1: TRADITIONAL SEQUENTIAL EXECUTION -->
-  <g transform="translate(48, 120)">
-    <text x="0" y="22" fill="#94a3b8" class="font-sans" font-size="13" font-weight="600">Traditional</text>
-    <text x="0" y="38" fill="#64748b" class="font-mono" font-size="11">Blocking Serial</text>
+    <!-- Steps -->
+    <g transform="translate(20, 46)">
+      <!-- Step 1 -->
+      <rect x="0" y="0" width="180" height="42" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="14" y="20" fill="#94a3b8" class="font-mono" font-size="10">STEP 1: Planner</text>
+      <text x="14" y="34" fill="#cbd5e1" class="font-mono" font-size="11" font-weight="600">Wait for spec...</text>
+      <!-- Arrow -->
+      <path d="M 185 21 L 205 21" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+      
+      <!-- Step 2 -->
+      <rect x="210" y="0" width="180" height="42" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="14" y="20" fill="#94a3b8" class="font-mono" font-size="10">STEP 2: Backend</text>
+      <text x="14" y="34" fill="#cbd5e1" class="font-mono" font-size="11" font-weight="600">Blocked idle UI</text>
+      <!-- Arrow -->
+      <path d="M 395 21 L 415 21" stroke="#475569" stroke-width="2"/>
 
-    <!-- Phase 1: Computation -->
-    <rect x="192" y="6" width="360" height="34" rx="6" fill="#334155" stroke="#475569" stroke-width="1"/>
-    <text x="210" y="28" fill="#e2e8f0" class="font-sans" font-size="12" font-weight="500">Lane 1: Compute / Dev (0.8s)</text>
+      <!-- Step 3 -->
+      <rect x="420" y="0" width="180" height="42" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="14" y="20" fill="#94a3b8" class="font-mono" font-size="10">STEP 3: Frontend</text>
+      <text x="14" y="34" fill="#cbd5e1" class="font-mono" font-size="11" font-weight="600">Blocked idle QA</text>
+      <!-- Arrow -->
+      <path d="M 605 21 L 625 21" stroke="#475569" stroke-width="2"/>
 
-    <!-- Phase 2: Reporter/UI Waiting (Idle gap) & Execution -->
-    <rect x="552" y="6" width="360" height="34" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-    <text x="570" y="28" fill="#94a3b8" class="font-sans" font-size="12">Lane 2: UI / Typst Report (0.8s)</text>
+      <!-- Step 4 -->
+      <rect x="630" y="0" width="180" height="42" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="14" y="20" fill="#94a3b8" class="font-mono" font-size="10">STEP 4: QA Tests</text>
+      <text x="14" y="34" fill="#cbd5e1" class="font-mono" font-size="11" font-weight="600">Late regressions</text>
+      <!-- Arrow -->
+      <path d="M 815 21 L 835 21" stroke="#475569" stroke-width="2"/>
 
-    <!-- Duration Pill -->
-    <rect x="930" y="8" width="95" height="30" rx="6" fill="#450a0a" stroke="#7f1d1d" stroke-width="1"/>
-    <text x="946" y="28" fill="#f87171" class="font-mono" font-size="12" font-weight="700">1.60s (Slow)</text>
-  </g>
-
-  <!-- SECTION 2: SPECULATIVE SKELETON PIPELINING -->
-  <g transform="translate(48, 205)">
-    <text x="0" y="22" fill="#10b981" class="font-sans" font-size="13" font-weight="700">Antigravity</text>
-    <text x="0" y="38" fill="#34d399" class="font-mono" font-size="11">Spec Pipelining</text>
-
-    <!-- Lane 1: Concurrent Data Producer -->
-    <rect x="192" y="0" width="360" height="32" rx="6" fill="url(#cyan-bar)"/>
-    <text x="210" y="21" fill="#ffffff" class="font-sans" font-size="12" font-weight="600">Lane 1: Computation writes calc_results.json</text>
-
-    <!-- Lane 2: Concurrent Speculative Skeleton Construction -->
-    <rect x="192" y="40" width="360" height="32" rx="6" fill="url(#pink-bar)"/>
-    <text x="210" y="61" fill="#ffffff" class="font-sans" font-size="12" font-weight="600">Lane 2: Typst / UI builds Mock Skeleton &amp; Layout</text>
-
-    <!-- Instant Zero-Lag Join Marker -->
-    <g transform="translate(560, 16)">
-      <circle cx="16" cy="18" r="16" fill="#10b981"/>
-      <path d="M11 18 L15 22 L22 14" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+      <!-- Step 5 -->
+      <rect x="840" y="0" width="130" height="42" rx="6" fill="#1e293b" stroke="#ef4444" stroke-opacity="0.4" stroke-width="1"/>
+      <text x="14" y="20" fill="#f87171" class="font-mono" font-size="10">STEP 5: Report</text>
+      <text x="14" y="34" fill="#fca5a5" class="font-mono" font-size="11" font-weight="600">Deliverable</text>
     </g>
-
-    <!-- Duration Pill -->
-    <rect x="930" y="20" width="95" height="30" rx="6" fill="#064e3b" stroke="#059669" stroke-width="1"/>
-    <text x="946" y="40" fill="#34d399" class="font-mono" font-size="12" font-weight="700">0.80s (-50%)</text>
   </g>
 
-  <!-- Bottom Summary Callout -->
-  <g transform="translate(48, 330)">
-    <rect width="1004" height="42" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
-    <text x="18" y="26" fill="#10b981" class="font-mono" font-size="11" font-weight="700">⚡ ZERO-LAG JOIN INVARIANT:</text>
-    <text x="220" y="26" fill="#cbd5e1" class="font-sans" font-size="12">
-      Downstream agents (Typst reporter, Visual designer) never wait for computation to complete. They build layout skeletons immediately and hydrate JSON in 0ms.
-    </text>
+  <!-- ================= SECTION 2: SPECULATIVE SKELETON ================= -->
+  <g transform="translate(40, 218)">
+    <rect x="0" y="0" width="1020" height="136" rx="8" fill="#0f172a" fill-opacity="0.75" stroke="rgba(16, 185, 129, 0.35)" stroke-width="1"/>
+    
+    <!-- Title -->
+    <circle cx="20" cy="22" r="4" fill="#10b981" class="blink-led"/>
+    <text x="32" y="26" fill="#34d399" class="font-mono" font-size="11" font-weight="700">SPECULATIVE SKELETON PIPELINING (ANTIGRAVITY v3.0)</text>
+    <text x="760" y="26" fill="#10b981" class="font-mono" font-size="11" font-weight="700">EFFICIENCY: ~1.0x (CONCURRENT FAN-OUT)</text>
+
+    <!-- Fan-out Layout -->
+    <g transform="translate(20, 46)">
+      <!-- Data Contract Node -->
+      <rect x="0" y="0" width="160" height="74" rx="6" fill="#0b1324" stroke="#06b6d4" stroke-width="1.2"/>
+      <text x="14" y="22" fill="#38bdf8" class="font-mono" font-size="10" font-weight="700">DATA CONTRACT</text>
+      <text x="14" y="40" fill="#f1f5f9" class="font-mono" font-size="11" font-weight="600">ui_data.json</text>
+      <text x="14" y="58" fill="#94a3b8" class="font-mono" font-size="10">results.json schema</text>
+
+      <!-- Connecting Bus Beams -->
+      <path d="M 160 18 L 220 18" stroke="#06b6d4" stroke-width="2" class="pulse-beam"/>
+      <path d="M 160 37 L 220 37" stroke="#6366f1" stroke-width="2" class="pulse-beam"/>
+      <path d="M 160 56 L 220 56" stroke="#10b981" stroke-width="2" class="pulse-beam"/>
+
+      <!-- Parallel Lanes -->
+      <!-- Lane 1: DB + Backend -->
+      <rect x="220" y="4" width="220" height="30" rx="4" fill="#1e293b" stroke="#3b82f6" stroke-opacity="0.5" stroke-width="1"/>
+      <text x="12" y="20" fill="#93c5fd" class="font-mono" font-size="10" font-weight="600">Lane 1: senior-dev (APIs)</text>
+
+      <!-- Lane 2: Frontend Craft UI -->
+      <rect x="220" y="40" width="220" height="30" rx="4" fill="#1e293b" stroke="#a855f7" stroke-opacity="0.5" stroke-width="1"/>
+      <text x="12" y="20" fill="#d8b4fe" class="font-mono" font-size="10" font-weight="600">Lane 2: visual-designer (UI)</text>
+
+      <!-- Lane 3: TDD Tests -->
+      <rect x="455" y="4" width="210" height="30" rx="4" fill="#1e293b" stroke="#10b981" stroke-opacity="0.5" stroke-width="1"/>
+      <text x="12" y="20" fill="#86efac" class="font-mono" font-size="10" font-weight="600">Lane 3: test-engineer (TDD)</text>
+
+      <!-- Lane 4: Typst Report -->
+      <rect x="455" y="40" width="210" height="30" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-opacity="0.5" stroke-width="1"/>
+      <text x="12" y="20" fill="#fde68a" class="font-mono" font-size="10" font-weight="600">Lane 4: typst-reporter (PDF)</text>
+
+      <!-- Convergence Bus -->
+      <path d="M 670 19 L 720 37" stroke="#10b981" stroke-width="2"/>
+      <path d="M 670 55 L 720 37" stroke="#10b981" stroke-width="2"/>
+
+      <!-- Zero-Lag Join & Gate -->
+      <rect x="720" y="10" width="250" height="56" rx="6" fill="#064e3b" fill-opacity="0.4" stroke="#10b981" stroke-width="1.5"/>
+      <circle cx="738" cy="38" r="5" fill="#10b981" class="blink-led"/>
+      <text x="752" y="32" fill="#a7f3d0" class="font-mono" font-size="11" font-weight="700">ZERO-LAG JOIN</text>
+      <text x="752" y="50" fill="#6ee7b7" class="font-mono" font-size="10">Verified &amp; Green DoD Pass</text>
+    </g>
   </g>
 </svg>

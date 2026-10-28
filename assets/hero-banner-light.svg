@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="60%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+
+    <!-- Top Glow Accent Line -->
+    <linearGradient id="top-line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.9"/>
+      <stop offset="35%" stop-color="#10b981" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#6366f1" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Ambient Glow Filters -->
+    <filter id="glow-blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Dot Matrix Pattern -->
+    <pattern id="dot-matrix" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#cbd5e1" fill-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Geist Sans', 'Inter', 'Segoe UI', Roboto, sans-serif; }
+    .font-mono { font-family: 'Geist Mono', 'JetBrains Mono', 'Fira Code', ui-monospace, Menlo, monospace; }
+    
+    /* Subtle Pulse Animations */
+    @keyframes pulseCore {
+      0%, 100% { transform: scale(1); opacity: 0.85; }
+      50% { transform: scale(1.03); opacity: 1; }
+    }
+    @keyframes pulseGreen {
+      0%, 100% { opacity: 1; filter: drop-shadow(0 0 2px #10b981); }
+      50% { opacity: 0.4; filter: none; }
+    }
+    @keyframes pulseAmber {
+      0%, 100% { opacity: 1; filter: drop-shadow(0 0 2px #f59e0b); }
+      50% { opacity: 0.45; filter: none; }
+    }
+    @keyframes pulseCyan {
+      0%, 100% { opacity: 1; filter: drop-shadow(0 0 2px #06b6d4); }
+      50% { opacity: 0.45; filter: none; }
+    }
+    @keyframes flowPulse {
+      0% { stroke-dashoffset: 240; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes flowPulseReverse {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: 240; }
+    }
+
+    .anim-pulse-green { animation: pulseGreen 2.2s ease-in-out infinite; }
+    .anim-pulse-amber { animation: pulseAmber 2.8s ease-in-out infinite; }
+    .anim-pulse-cyan { animation: pulseCyan 2.4s ease-in-out infinite; }
+    .flow-line-1 { stroke-dasharray: 20 100; animation: flowPulse 3.5s linear infinite; }
+    .flow-line-2 { stroke-dasharray: 30 120; animation: flowPulse 2.8s linear infinite; }
+    .flow-line-3 { stroke-dasharray: 25 90; animation: flowPulse 3.2s linear infinite; }
+    .flow-line-rev { stroke-dasharray: 25 100; animation: flowPulseReverse 4s linear infinite; }
+  </style>
+
+  <!-- Chassis Background Base -->
+  <rect width="1200" height="380" rx="16" fill="url(#bg-grad)"/>
+  <rect width="1200" height="380" rx="16" fill="url(#dot-matrix)"/>
+
+  <!-- Precision Borders (Hairline 1px) -->
+  <rect x="0.5" y="0.5" width="1199" height="379" rx="15.5" fill="none" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1"/>
+  <rect x="1.5" y="1.5" width="1197" height="377" rx="14.5" fill="none" stroke="rgba(0, 0, 0, 0.04)" stroke-width="1"/>
+  <!-- Top Accent Beam -->
+  <rect x="0" y="0" width="1200" height="3" rx="1.5" fill="url(#top-line-grad)"/>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="120" cy="190" r="140" fill="#06b6d4" fill-opacity="0.05" filter="url(#glow-blur)"/>
+  <circle cx="600" cy="180" r="180" fill="#6366f1" fill-opacity="0.06" filter="url(#glow-blur)"/>
+  <circle cx="1060" cy="190" r="150" fill="#f59e0b" fill-opacity="0.05" filter="url(#glow-blur)"/>
+
+  <!-- ==================== LEFT SECTION: Brand & Architecture ==================== -->
+  <g transform="translate(48, 44)">
+    <!-- Status Chip -->
+    <rect x="0" y="0" width="224" height="28" rx="6" fill="#10b981" fill-opacity="0.1" stroke="#10b981" stroke-opacity="0.35" stroke-width="1"/>
+    <circle cx="14" cy="14" r="4.5" fill="#10b981" class="anim-pulse-green"/>
+    <text x="28" y="18" fill="#10b981" class="font-mono" font-size="11" font-weight="600" letter-spacing="1">SYSTEM READY • v3.0.0 PRO</text>
+
+    <!-- Main Title -->
+    <text x="0" y="76" fill="#0f172a" class="font-sans" font-size="34" font-weight="800" letter-spacing="-1">
+      ANTIGRAVITY
+    </text>
+    <text x="238" y="76" fill="#6366f1" class="font-mono" font-size="18" font-weight="600">
+      CORE
+    </text>
+
+    <!-- Subtitle / Architecture Descriptor -->
+    <text x="0" y="104" fill="#64748b" class="font-sans" font-size="14" font-weight="500">
+      Multi-Agent Operating System &amp; Autonomous Engineering Mesh
+    </text>
+
+    <!-- Metrics Bento Box Mini -->
+    <g transform="translate(0, 134)">
+      <!-- Box 1 -->
+      <rect x="0" y="0" width="134" height="56" rx="8" fill="#ffffff" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1"/>
+      <text x="14" y="24" fill="#94a3b8" class="font-mono" font-size="10" font-weight="600">SQUAD ROSTER</text>
+      <text x="14" y="46" fill="#0f172a" class="font-mono" font-size="18" font-weight="700">15 AGENTS</text>
+
+      <!-- Box 2 -->
+      <rect x="144" y="0" width="134" height="56" rx="8" fill="#ffffff" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1"/>
+      <text x="14" y="24" fill="#94a3b8" class="font-mono" font-size="10" font-weight="600">SKILL REPERTOIRE</text>
+      <text x="14" y="46" fill="#06b6d4" class="font-mono" font-size="18" font-weight="700">17 SKILLS</text>
+
+      <!-- Box 3 -->
+      <rect x="288" y="0" width="134" height="56" rx="8" fill="#ffffff" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1"/>
+      <text x="14" y="24" fill="#94a3b8" class="font-mono" font-size="10" font-weight="600">TOKEN SHIELD</text>
+      <text x="14" y="46" fill="#10b981" class="font-mono" font-size="18" font-weight="700">-98.3%</text>
+    </g>
+
+    <!-- Tactical Terminal Line -->
+    <g transform="translate(0, 206)">
+      <rect x="0" y="0" width="422" height="34" rx="6" fill="#e2e8f0" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1"/>
+      <circle cx="16" cy="17" r="3" fill="#ef4444"/>
+      <circle cx="28" cy="17" r="3" fill="#f59e0b"/>
+      <circle cx="40" cy="17" r="3" fill="#10b981"/>
+      <text x="56" y="22" fill="#94a3b8" class="font-mono" font-size="11">$</text>
+      <text x="70" y="22" fill="#64748b" class="font-mono" font-size="11">antigravity --orchestrate --mode speculative-skeleton</text>
+    </g>
+  </g>
+
+  <!-- ==================== CENTER & RIGHT SECTION: Interactive Mesh Topology ==================== -->
+  <g transform="translate(540, 28)">
+    <!-- Circuit Base Grid Lines -->
+    <path d="M 60 70 L 220 70 L 300 150 L 580 150" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M 60 160 L 220 160 L 300 150 L 580 150" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M 60 250 L 220 250 L 300 150 L 580 150" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+
+    <!-- Dynamic Flow Pulse Beams (Animated) -->
+    <path d="M 60 70 L 220 70 L 300 150 L 580 150" fill="none" stroke="#06b6d4" stroke-width="2.5" class="flow-line-1" stroke-linecap="round"/>
+    <path d="M 60 160 L 220 160 L 300 150 L 580 150" fill="none" stroke="#6366f1" stroke-width="2.5" class="flow-line-2" stroke-linecap="round"/>
+    <path d="M 60 250 L 220 250 L 300 150 L 580 150" fill="none" stroke="#f59e0b" stroke-width="2.5" class="flow-line-3" stroke-linecap="round"/>
+
+    <!-- Reverse Verification Loop to QA -->
+    <path d="M 580 170 L 300 170 L 220 260 L 60 260" fill="none" stroke="#10b981" stroke-width="2" class="flow-line-rev" stroke-dasharray="10 60"/>
+
+    <!-- ============ CLUSTER 1: DETERMINISTIC (T=0.0 - 0.1) ============ -->
+    <g transform="translate(10, 42)">
+      <rect x="0" y="0" width="190" height="56" rx="8" fill="#ffffff" stroke="#06b6d4" stroke-opacity="0.35" stroke-width="1"/>
+      <circle cx="16" cy="18" r="4" fill="#06b6d4" class="anim-pulse-cyan"/>
+      <text x="28" y="21" fill="#06b6d4" class="font-mono" font-size="10" font-weight="700" letter-spacing="0.5">DETERMINISTIC</text>
+      <text x="156" y="21" fill="#94a3b8" class="font-mono" font-size="9">T=0.0</text>
+      <text x="16" y="42" fill="#64748b" class="font-mono" font-size="11">code-reviewer • science • db</text>
+    </g>
+
+    <!-- ============ CLUSTER 2: BALANCED (T=0.3 - 0.4) ============ -->
+    <g transform="translate(10, 132)">
+      <rect x="0" y="0" width="190" height="56" rx="8" fill="#ffffff" stroke="#6366f1" stroke-opacity="0.35" stroke-width="1"/>
+      <circle cx="16" cy="18" r="4" fill="#6366f1"/>
+      <text x="28" y="21" fill="#818cf8" class="font-mono" font-size="10" font-weight="700" letter-spacing="0.5">BALANCED / PROD</text>
+      <text x="156" y="21" fill="#94a3b8" class="font-mono" font-size="9">T=0.3</text>
+      <text x="16" y="42" fill="#64748b" class="font-mono" font-size="11">senior-dev • arch • coord</text>
+    </g>
+
+    <!-- ============ CLUSTER 3: CREATIVE (T=0.7 - 0.85) ============ -->
+    <g transform="translate(10, 222)">
+      <rect x="0" y="0" width="190" height="56" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-opacity="0.35" stroke-width="1"/>
+      <circle cx="16" cy="18" r="4" fill="#f59e0b" class="anim-pulse-amber"/>
+      <text x="28" y="21" fill="#fbbf24" class="font-mono" font-size="10" font-weight="700" letter-spacing="0.5">CREATIVE / RESEARCH</text>
+      <text x="156" y="21" fill="#94a3b8" class="font-mono" font-size="9">T=0.8</text>
+      <text x="16" y="42" fill="#64748b" class="font-mono" font-size="11">visual-designer • research</text>
+    </g>
+
+    <!-- ============ CENTRAL DISPATCH HUB ============ -->
+    <g transform="translate(250, 120)">
+      <rect x="0" y="0" width="110" height="60" rx="10" fill="#ffffff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#soft-glow)"/>
+      <text x="55" y="26" text-anchor="middle" fill="#c084fc" class="font-mono" font-size="11" font-weight="700">DISPATCH</text>
+      <text x="55" y="46" text-anchor="middle" fill="#0f172a" class="font-mono" font-size="13" font-weight="800">COORDINATOR</text>
+    </g>
+
+    <!-- ============ EXECUTION LANES & OUTPUT BUS ============ -->
+    <g transform="translate(420, 48)">
+      <!-- Lane A -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="170" height="40" rx="6" fill="#ffffff" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1"/>
+        <circle cx="14" cy="20" r="3.5" fill="#38bdf8"/>
+        <text x="26" y="24" fill="#0f172a" class="font-mono" font-size="11" font-weight="600">LANE A • Core Logic</text>
+      </g>
+      <!-- Lane B -->
+      <g transform="translate(0, 52)">
+        <rect x="0" y="0" width="170" height="40" rx="6" fill="#ffffff" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1"/>
+        <circle cx="14" cy="20" r="3.5" fill="#a855f7"/>
+        <text x="26" y="24" fill="#0f172a" class="font-mono" font-size="11" font-weight="600">LANE B • UI / Craft</text>
+      </g>
+      <!-- Lane C -->
+      <g transform="translate(0, 104)">
+        <rect x="0" y="0" width="170" height="40" rx="6" fill="#ffffff" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1"/>
+        <circle cx="14" cy="20" r="3.5" fill="#10b981"/>
+        <text x="26" y="24" fill="#0f172a" class="font-mono" font-size="11" font-weight="600">LANE C • TDD Tests</text>
+      </g>
+      <!-- Lane D -->
+      <g transform="translate(0, 156)">
+        <rect x="0" y="0" width="170" height="40" rx="6" fill="#ffffff" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1"/>
+        <circle cx="14" cy="20" r="3.5" fill="#f59e0b"/>
+        <text x="26" y="24" fill="#0f172a" class="font-mono" font-size="11" font-weight="600">LANE D • Typst Docs</text>
+      </g>
+      <!-- QA Gate -->
+      <g transform="translate(0, 208)">
+        <rect x="0" y="0" width="170" height="40" rx="6" fill="#10b981" fill-opacity="0.12" stroke="#10b981" stroke-opacity="0.5" stroke-width="1"/>
+        <circle cx="14" cy="20" r="4" fill="#10b981" class="anim-pulse-green"/>
+        <text x="26" y="24" fill="#10b981" class="font-mono" font-size="11" font-weight="700">GATE • QA DoD Review</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Hardware Chassis Details (Status Indicator & Latency Counter) -->
+  <g transform="translate(48, 344)">
+    <circle cx="6" cy="6" r="3" fill="#10b981"/>
+    <text x="18" y="10" fill="#94a3b8" class="font-mono" font-size="10">STATUS: CONCURRENT PIPELINE ACTIVE</text>
+    <text x="360" y="10" fill="#94a3b8" class="font-mono" font-size="10">ZERO-LAG JOIN ENABLED</text>
+    <text x="640" y="10" fill="#94a3b8" class="font-mono" font-size="10">CONSENUS: TDD RED-GREEN-AUDIT</text>
+    <text x="960" y="10" fill="#94a3b8" class="font-mono" font-size="10">SPEC: OPEN-SPEC v1.0</text>
+  </g>
+</svg>
